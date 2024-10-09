@@ -5,9 +5,11 @@ body {
 }
 
 header {
-    background-color: #822965;
+    background-color: #ffffff;
     color: white;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
 footer {
@@ -15,4 +17,15 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+h1{
+    color: black;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    overflow: hidden;
 }
