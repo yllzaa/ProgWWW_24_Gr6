@@ -7,6 +7,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
+    margin: 0%;
 }
 
 header {
@@ -77,10 +78,58 @@ header h1{
 
 .sloganbox button{
     color: #d8d1c9;
+    display: inline-block;
     margin: 10px;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 20%);
     width: fit-content;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px rgba(0, 0, 0, 40%);
 }
+
+.sloganbox button:hover {
+    background-color: rgba(255, 255, 255, 5%); /* Green */
+    color: #d8d1c9;
+  }
+
+.sloganbox button:active {
+    background-color: rgba(0, 0, 0, 20%); /* Green */
+    color: #d8d1c9;
+    box-shadow: 0 2px rgba(0, 0, 0, 70%);
+    transform: translateY(2px);
+}
+
+.productsOffered{
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 40px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: center;
+    
+} 
+
+.productText{
+    width: 400px;
+
+}
+
+.products img{
+    max-width: 400px;
+    min-width: 200px;
+    
+
+}
+
 hr{
     opacity: 0%;
 }
