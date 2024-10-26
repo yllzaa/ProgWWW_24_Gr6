@@ -11,20 +11,15 @@
 
       
         <body>
-            <header>
-                <div class="imgbox">
-                    <img src="Pictures/SoleilWhite.png">
-                </div>
-                <h1>Welcome To Soleil!</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="aboutus.html">About us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <div id="header"></div> <!-- Placeholder for the header -->
+
+            <script>
+            // Load header.html into the #header div
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header').innerHTML = data)
+                .catch(error => console.error('Error loading header:', error));
+            </script>
 
 
             <div class="container">
