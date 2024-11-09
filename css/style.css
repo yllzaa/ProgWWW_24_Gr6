@@ -91,7 +91,7 @@ footer {
     height: auto;
     width: auto;
     position: relative;
-    background-color: #9e9f8b;
+    /* background-color: #9e9f8b; */
     
 }
 .container .sloganbox{
@@ -105,7 +105,7 @@ footer {
     background-size:cover;
     background-attachment: fixed;
 
-    height: 700px;
+    height: 600px;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -163,6 +163,12 @@ footer {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
+    /* IDK ABT THIS BG IMAGE LOL */
+    background-image: url(../Pictures/leavesbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 20px 0px;
 }
 .products{
     display: flex;
@@ -465,15 +471,19 @@ hr{
     margin-inline: 20px;
 }
 
-.collection-card .card-title { margin-block-end: 5px;}
+.collection-card .card-title { 
+    margin-block-end: 5px;
+    font-weight: 500;
+}
 .collection-card p, h2{
     margin: 0;
+    font-weight: 100;
 }
 
 .collection-card .card-text {
-    color: #000;
+    color:#212020;
     font-size: var(--fs-6);
-    font-weight: var(--fw-600);
+    font-weight: 200;
     margin-block-end: auto;
 }
 

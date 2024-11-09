@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
         :root {
-            --headerBg: #212020;
+            --headerBg: #121111;
         }
 
         header {
@@ -69,16 +69,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #ff7e5f;
+            background-color: #555;
             border-radius: 50%;
             width: 40px;
             height: 40px;
             cursor: pointer;
             transition: background-color 0.3s;
+            text-decoration: none;
         }
 
         .cart-icon:hover {
-            background-color: #feb47b;
+            background-color: #8f6f7f;
         }
 
         .cart-icon i {
@@ -89,10 +90,15 @@
 </head>
 <body>
     <header>
-        <div class="imgbox">
-            <img src="Pictures/SoleilWhite.png" alt="Soleil Logo">
-        </div>
-        <h1>Welcome To Soleil!</h1>
+        <!-- <div class="logowelc"> -->
+            <a href="Fragrance.html" style="text-decoration: none; display: flex; align-items: center;">
+                <div class="imgbox">
+                    <img src="Pictures/SoleilWhite.png" alt="Soleil Logo">
+                </div>
+                <h1>Welcome To Soleil!</h1>
+            </a>
+         <!-- </div> -->
+
         <nav>
             <ul>
                 <li><a href="Fragrance.html">Home</a></li>
