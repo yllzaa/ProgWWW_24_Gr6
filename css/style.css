@@ -87,6 +87,11 @@ footer {
     text-align: center;
 }
 
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-family: 'FontAwesome';
+}
 .container{
     height: auto;
     width: auto;
@@ -157,7 +162,7 @@ footer {
 /* pjesa 2 */ 
 .productsOffered{
     position: relative;
-    background-color: #ececec;
+    background-color: #5e5d5d;
     padding: 80px;
     width: auto;
     display: flex;
@@ -166,10 +171,11 @@ footer {
     align-items: center;
     /* IDK ABT THIS BG IMAGE LOL */
     background-image: url(../Pictures/leavesbg.jpg);
+    background-blend-mode:multiply;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 20px 0px;
+    margin: 20px 10px;
 }
 .products{
     display: flex;
@@ -232,6 +238,8 @@ footer {
     background-color: #ffffff;
     width: 200px;
     /* height:320px; */
+    border-radius: 6%;
+    padding: 5px;
 }
 
 li{
