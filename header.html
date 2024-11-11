@@ -30,7 +30,7 @@
             position: relative;
             width: 70px;
             height: 70px;
-            border-radius: 50%;
+            border-radius: 0%;
             overflow: hidden;
         }
 
@@ -47,6 +47,7 @@
             list-style-type: none;
             padding: 10px 15px;
             display: flex;
+            gap: 3px;
         }
 
         nav ul li {
@@ -58,10 +59,12 @@
             text-decoration: none;
             padding: 10px 15px;
             transition: background-color 0.3s;
+            /* transition: text-decoration 0.3s; */
         }
 
         nav ul li a:hover {
-            background-color: #555;
+            background-color: #623f50;
+            /* text-decoration: underline; */
         }
 
         /* Shopping Cart Icon */
@@ -69,7 +72,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #555;
+            background-color: #000;
             border-radius: 50%;
             width: 40px;
             height: 40px;
@@ -79,12 +82,18 @@
         }
 
         .cart-icon:hover {
-            background-color: #8f6f7f;
+            background-color: #623f50;
         }
 
         .cart-icon i {
             color: white;
             font-size: 18px;
+        }
+
+        .icons{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
         }
     </style>
 </head>
@@ -107,10 +116,15 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <a href="cart.html" class="cart-icon">
-            <!-- Font Awesome Shopping Cart Icon -->
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </a>
+
+        <div class="icons">
+            <a href="" class="cart-icon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <a href="cart.html" class="cart-icon">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </a>
+        </div>
     </header>
 </body>
 </html>
