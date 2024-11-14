@@ -1,9 +1,12 @@
 :root{
     --headerBg: #212020;
+    --softPink: #a76784;
+    --bgEggshell: #f0f0f0;
+    --softGrey: #333;
+    --beige: #d8d1c9;
 
     --gradient: linear-gradient(to right, transparent 50%, var(--white_30) 100%);
 
-    --ff-urbanist: 'Urbanist', sans-serif;
 
     --fs-1: 4.8rem;
     --fs-2: 4rem;
@@ -42,9 +45,9 @@ a {
 
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: "Scala Sans Pro", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    background-color: var(--bgEggshell);
+    color: var(--softGrey);
     margin: 0%;
     display: flex;
     flex-direction: column;
@@ -123,13 +126,15 @@ footer {
 }
 
 .sloganbox h1{
-    color: #d8d1c9;
+    color: var(--beige);
+    /* color: var(--bgEggshell); */
     margin: 10px;
     font-size: 3.1em;
 }
 
 .sloganbox h4{
-    color: #c4bcb5;
+    color: var(--beige);
+    /* color: var(--bgEggshell); */
     margin: 10px;
     /* font-weight: 100; */
     font-weight: 200;
@@ -138,7 +143,7 @@ footer {
 }
 
 .sloganbox button{
-    color: #d8d1c9;
+    color: var(--beige);
     display: inline-block;
     margin: 10px;
     background-color: rgba(0, 0, 0, 17%);
@@ -152,13 +157,13 @@ footer {
 }
 
 .sloganbox button:hover {
-    background-color: rgba(255, 255, 255, 5%); /* Green */
-    color: #d8d1c9;
+    background-color: rgba(255, 255, 255, 5%); 
+    /* color: var(--beige); */
   }
 
 .sloganbox button:active {
     background-color: rgba(0, 0, 0, 20%); 
-    color: #d8d1c9;
+    /* color: var(--beige); */
     box-shadow: 0 2px rgba(0, 0, 0, 70%);
     transform: translateY(2px);
 }
@@ -166,11 +171,11 @@ footer {
 /* pjesa 2 */ 
 .productsOffered{
     position: relative;
-    background-color: #5e5d5d;
+    background-color: white;
     padding: 80px;
     width: auto;
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     justify-content: center;
     align-items: center;
     /* IDK ABT THIS BG IMAGE LOL */
@@ -178,20 +183,23 @@ footer {
     background-blend-mode:multiply;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     margin: 20px 10px;
+    gap: 20px;
 }
 .products{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 60px;
     justify-content: center;
+    align-items: center;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: var(--bgEggshell);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 2.5%;
     transition: var(--transition-3);
+    max-width: 300px;
 } 
 
 .products:hover{
@@ -202,18 +210,22 @@ footer {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25);
 }
 
-.productText{
-    width: 400px;
-    padding-right: 30px;
+.textBox{
+    /* width: auto; */
+    /* padding-right: 30px; */
     text-align: justify;
 }
 
+.textBox p{
+    font-size: 0.9em;
+}
+
 .products img{
-    max-width: 400px;
+    max-width: 300px;
     min-width: 200px;
     object-fit: cover;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
 }
 
 /* sdi as vet */
@@ -239,7 +251,7 @@ footer {
 
 
 .shop-card{
-    background-color: #ffffff;
+    background-color: white;
     width: 200px;
     /* height:320px; */
     border-radius: 6%;
@@ -269,7 +281,7 @@ li{
     position: absolute;
     top: 20px;
     left: 20px;
-    color: #a76784;
+    color: var(--softPink);
 }
 
 .shop-card .card-actions {
@@ -284,17 +296,18 @@ li{
 }
 
 .shop-card .action-btn {
-    background-color: #f0f0f0be;
+    /* background-color: #f0f0f0be; */
+    background-color: var(--bgEggshell);
     font-size: 14px;
     padding: 8px;
     border-radius: 50%;
     transition: var(--transition-1);
-    border: #000;
+    border: none;
 }
 
 .shop-card .action-btn:is(:hover, :focus) {
-    background-color: #000;
-    color: #f0f0f0;
+    background-color: black;
+    color: var(--bgEggshell);
 }
 .shop-card:is(:hover, :focus-within) .card-actions {
     opacity: 1;
@@ -311,11 +324,11 @@ li{
     gap: 5px;
 }
 .shop-card .price .span {
-    color: #000;
+    color: var(--softGrey);
     font-weight: var(--fw-900);
 }
 .shop-card .card-title {
-    color: var(--black);
+    color: var(--softGrey);
     font-size: var(--fs-9);
     font-weight:var(--fw-500);
     margin-block-end: 8px;
@@ -328,20 +341,20 @@ li{
 
 
 .shop-card .card-title:is(:hover, :focus) {
-    color: #a76784;
+    color: var(--softPink);
 }
 .shop-card .rating-wrapper {
     gap: 2px;
-    color: #a76784;
+    color: var(--softPink);
     font-size: 15px;
 }
 .shop-card .rating-text {
-    color: #a76784;
+    color: var(--softPink);
     font-weight: 100;
     margin: 5px;
 }
 
-.shop .btn-link:is(:hover, :focus) { color: #a76784; }
+.shop .btn-link:is(:hover, :focus) { color: var(--softPink); }
 
 /* width */
 ::-webkit-scrollbar {
@@ -350,7 +363,7 @@ li{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: var(--bgEggshell); 
   }
    
   /* Handle */
@@ -367,7 +380,7 @@ li{
 .has-scrollbar::-webkit-scrollbar-thumb { background-color: transparent; }
 
 .has-scrollbar:is(:hover, :focus-within)::-webkit-scrollbar-track {
-  background-color: hsl(0, 0%, 98%);
+  background-color: hsla(0, 0%, 88%, 0.105);
 }
 
 .has-scrollbar:is(:hover, :focus-within)::-webkit-scrollbar-thumb {
@@ -449,7 +462,7 @@ hr{
   
 
   .btn-link {
-    color: var(--black);
+    color: var(--softGrey);
     font-weight: var(--fw-600);
     display: flex;
     align-items: center;
@@ -474,7 +487,7 @@ hr{
     /* gap: 10px; */
  }
 .collection-card {
-    background-color: var(--light-gray);
+    /* background-color: var(--light-gray); */
     background-repeat: no-repeat;
     background-size:cover;
     min-height: 400px;
@@ -508,6 +521,36 @@ hr{
 
 .collection-card a:hover{
     text-decoration: underline;
+}
+
+
+/* The testing thingy ozot */
+.testing-coll{
+    display: flex;
+    flex-direction: row;
+    background-color: #e2e2de;
+    padding: 50px 70px;
+    gap: 10px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.testing-coll img{
+    /* max-height: 500px; */
+    /* min-width: 400px; */
+    height: 500px;
+    width: 500px;
+    object-fit:cover;
+}
+
+.testing-coll .textBox{
+    max-width: 360px
+}
+
+.textBox h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.6em;
 }
 
 /* FEATURES LOL */
