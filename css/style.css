@@ -90,7 +90,7 @@ h2{
     font-size: 2.6em;
 }
 .labelText{
-    color: var(--labelBrown);
+    color: var(--softPink);
     font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
     text-transform: uppercase;
