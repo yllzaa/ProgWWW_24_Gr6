@@ -12,13 +12,12 @@
         }
 
         header {
-            /* position: absolute; */
             background-color: var(--headerBg);
             padding: 10px;
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: space-between;  /* Aligns items to the left and right */
+            justify-content: space-between;
         }
 
         header h1 {
@@ -53,6 +52,7 @@
 
         nav ul li {
             display: inline;
+            position: relative; /* Important for dropdown positioning */
         }
 
         nav ul li a {
@@ -60,12 +60,39 @@
             text-decoration: none;
             padding: 10px 15px;
             transition: background-color 0.3s;
-            /* transition: text-decoration 0.3s; */
         }
 
         nav ul li a:hover {
             background-color: #623f50;
-            /* text-decoration: underline; */
+        }
+
+        /* Dropdown menu styles */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none; /* Hidden by default */
+            position: absolute;
+            background-color: #121111;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block; /* Show dropdown on hover */
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #623f50;
         }
 
         /* Shopping Cart Icon */
@@ -100,20 +127,28 @@
 </head>
 <body>
     <header>
-        <!-- <div class="logowelc"> -->
-            <a href="Fragrance.html" style="text-decoration: none; display: flex; align-items: center;">
-                <div class="imgbox">
-                    <img src="Pictures/SoleilWhite.png" alt="Soleil Logo">
-                </div>
-                <h1>Welcome To Soleil!</h1>
-            </a>
-         <!-- </div> -->
+        <a href="Fragrance.html" style="text-decoration: none; display: flex; align-items: center;">
+            <div class="imgbox">
+                <img src="Pictures/SoleilWhite.png" alt="Soleil Logo">
+            </div>
+            <h1>Welcome To Soleil!</h1>
+        </a>
 
         <nav>
             <ul>
                 <li><a href="Fragrance.html">Home</a></li>
                 <li><a href="aboutus.html">About us</a></li>
-                <li><a href="shopperfume.html">Shop Now</a></li>
+
+                <!-- Dropdown menu for Shop Now -->
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Shop Now</a>
+                    <div class="dropdown-content">
+                        <a href="shopperfume.html">Perfumes</a>
+                        <a href="shopcandles.html">Candles</a>
+                        <a href="shoplotions.html">Lotions</a>
+                    </div>
+                </li>
+
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
