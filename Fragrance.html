@@ -883,9 +883,16 @@
 
             
            
-            <footer>
-                <p>Contact us at: example@example.com</p>
-            </footer>
+            <div id="footer"></div> <!-- Placeholder for the header -->
+
+            <script>
+            // Load header.html into the #header div
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('footer').innerHTML = data)
+                .catch(error => console.error('Error loading footer:', error));
+            </script>
+
         </body>
        
        

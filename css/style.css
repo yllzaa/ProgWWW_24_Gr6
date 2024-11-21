@@ -57,12 +57,7 @@ body {
     justify-content: center;
 }
 
-footer {   /* will be switched out */
-    background-color: #1a1a1a;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}  
+
 .container{
     height: auto;
     width: auto;
@@ -571,6 +566,17 @@ hr{
     .hero-card { padding-inline: 70px;}
 
     .hero-text { max-width: 30ch;}
+
+    
+    /* footer */
+    .alert { padding-block: 8px; }
+
+    .footer-top .container { padding-inline: 30px; }
+
+    .hero-card { padding-inline: 70px;}
+
+    .hero-text { max-width: 30ch;}
+
 
     .collection-list{
         display: flex;
