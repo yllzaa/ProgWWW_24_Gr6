@@ -225,29 +225,6 @@ hr{
     font-size: 0.9em;
 }
 
-.sloganbox button{
-    color: var(--beige);
-    displ100vhay: inline-block;
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 17%);
-    width: fit-content;
-    padding: 10px 15px;
-    text-align: center;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 5px rgba(0, 0, 0, 40%);
-    transition: var(--transition-1);
-}
-.sloganbox button:hover {
-    background-color: rgba(255, 255, 255, 5%); 
-    /* color: var(--beige); */
-  }
-.sloganbox button:active {
-    background-color: rgba(0, 0, 0, 20%); 
-    /* color: var(--beige); */
-    box-shadow: 0 2px rgba(0, 0, 0, 70%);
-    transform: translateY(2px);
-}
 
 /* PRODUCT PREVIEW */
 .products-coll{
