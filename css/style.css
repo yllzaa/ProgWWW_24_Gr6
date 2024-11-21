@@ -177,29 +177,42 @@ hr{
 /* SLOGAN BOX */
 .sloganbox{
     position:relative;
-    background-image: url('../Pictures/fragranceBg.jpg');
-    background-position-x: center;
-    background-position-y: center;
-    background-color: var(--softGrey);
-    background-repeat:no-repeat;
-    background-blend-mode:overlay;
-    background-size:cover;
-    background-attachment: fixed;
+    /* background-image: url('../Pictures/fragranceBg.jpg'); */
+    /* background-position-x: center; */
+    /* background-position-y: center; */
+    background-color:#00000047;
+    
 
     height: 500px;
     width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 50px;
+    align-items: center;
+    justify-content:end;
+    /* padding-left: 50px; */
+    padding-bottom: 20px;
 }
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+ }
 
 .sloganbox h1{
-    color: var(--beige);
-    /* color: var(--bgEggshell); */
-    margin: 10px;
-    font-size: 3.1em;
-    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    mix-blend-mode: difference;
+    margin: 3px;
+    font-size: 2.5em;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.sloganbox h2{
+    color: white;
+    mix-blend-mode: difference;
+    font-size: 2em;
 }
 
 .sloganbox h4{
@@ -212,29 +225,6 @@ hr{
     font-size: 0.9em;
 }
 
-.sloganbox button{
-    color: var(--beige);
-    display: inline-block;
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 17%);
-    width: fit-content;
-    padding: 10px 15px;
-    text-align: center;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 5px rgba(0, 0, 0, 40%);
-    transition: var(--transition-1);
-}
-.sloganbox button:hover {
-    background-color: rgba(255, 255, 255, 5%); 
-    /* color: var(--beige); */
-  }
-.sloganbox button:active {
-    background-color: rgba(0, 0, 0, 20%); 
-    /* color: var(--beige); */
-    box-shadow: 0 2px rgba(0, 0, 0, 70%);
-    transform: translateY(2px);
-}
 
 /* PRODUCT PREVIEW */
 .products-coll{
