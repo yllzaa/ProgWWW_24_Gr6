@@ -1,107 +1,107 @@
 [
     {
         "id": 1,
-        "name":" Elias Bloom",
+        "name":"Sakura Blooms",
         "price": 200,
-        "image": "Pictures/perfume1.jpg",
+        "image": "Pictures/PerfumeColl/PinkPerfume.png",
         "description": "Experience the essence of timeless elegance with Elysian Bloom, a fragrance that captures the delicate balance between floral grace and sophisticated warmth. This enchanting scent opens with bright, fresh notes of bergamot and lemon blossom, evoking the first rays of morning light. As it evolves, a heart of jasmine and rose unfurls, intertwining with hints of lily-of-the-valley, creating a bouquet of pure femininity."
     },
     {
         "id": 2,
-        "name":" PERFUME",
+        "name":"Forest Reverie",
         "price": 250,
-        "image": "Pictures/perfume2.jpg",
+        "image": "Pictures/PerfumeColl/ForestPerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
         "id": 3,
-        "name":" PERFUME",
+        "name":"Celeste Noir",
         "price": 290,
-        "image": "Pictures/perfume3.jpg",
+        "image": "Pictures/PerfumeColl/NightPerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
         "id": 4,
-        "name":" PERFUME",
+        "name":"Crimson Kiss",
         "price": 200,
-        "image": "Pictures/perfume4.jpg",
+        "image": "Pictures/PerfumeColl/BloodPerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
         "id": 5,
-        "name":" PERFUME",
+        "name":"Steel Rain",
         "price": 300,
-        "image": "Pictures/perfume5.jpg",
+        "image": "Pictures/PerfumeColl/BluePerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
         "id": 6,
-        "name":" PERFUME",
+        "name":"Ocean Foam",
         "price": 200,
-        "image": "Pictures/perfume6.jpg",
+        "image": "Pictures/PerfumeColl/TealPerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
         "id": 7,
-        "name":" PERFUME",
+        "name":"Citrus Cascade",
         "price": 200,
-        "image": "Pictures/perfume7.jpg",
+        "image": "Pictures/PerfumeColl/GreenPerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
         "id": 8,
-        "name":" PERFUME",
+        "name":"Poppy Milk",
         "price": 200,
-        "image": "Pictures/perfume8.jpg",
+        "image": "Pictures/PerfumeColl/PoppyPerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
         "id": 9,
-        "name":" PERFUME",
+        "name":"Blue Hawaii",
         "price": 200,
-        "image": "Pictures/perfume9.jpg",
+        "image": "Pictures/PerfumeColl/AquaticPerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
         "id": 10,
-        "name":" PERFUME",
+        "name":"Velvet Lavander",
         "price": 200,
-        "image": "Pictures/perfume10.jpg",
+        "image": "Pictures/PerfumeColl/PurplePerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
         "id": 11,
-        "name":" PERFUME",
+        "name":"Barely Red",
         "price": 200,
-        "image": "Pictures/perfume11.jpg",
+        "image": "Pictures/PerfumeColl/RedPerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
         "id": 12,
-        "name":" PERFUME",
+        "name":"Honey Ember",
         "price": 200,
-        "image": "Pictures/perfume12.jpg",
+        "image": "Pictures/PerfumeColl/YellowPerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
         "id": 13,
-        "name":" PERFUME",
+        "name":"La Passion",
         "price": 200,
-        "image": "Pictures/perfume10.jpg",
+        "image": "Pictures/PerfumeColl/FirePerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
         "id": 14,
-        "name":" PERFUME",
+        "name":"Opium Obsidian",
         "price": 200,
-        "image": "Pictures/perfume11.jpg",
+        "image": "Pictures/PerfumeColl/BlackPerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
         "id": 15,
-        "name":" PERFUME",
+        "name":"Cocoa Beans",
         "price": 200,
-        "image": "Pictures/perfume12.jpg",
+        "image": "Pictures/PerfumeColl/BrownPerfume.png",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     }
 

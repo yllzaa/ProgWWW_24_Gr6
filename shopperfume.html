@@ -19,7 +19,13 @@
     </script>
     
     <div class="container">
-        <div class="title">PRODUCT LIST</div>
+        <div class="sloganbox" style="background-image: url(Pictures/bgimage2.jpg);">
+            <div class="textBox" style="text-align: center;">
+                <h3 class="labelText">Perfume Isle</h3>
+                <h2>Perfume Collection</h2>
+            </div>
+
+        </div>
         <div class="listProduct">
 
         </div>
@@ -54,9 +60,50 @@
                 newProduct.href = '/productdetail.html?id=' + product.id;
                 newProduct.classList.add('item');
                 newProduct.innerHTML = 
-                `<img src="${product.image}" alt="">
-                <h2>${product.name}</h2>
-                <div class="price">$${product.price}</div>`;
+                `<div class="shop-card" style="width:100%;">
+                    <div class="card-banner img-holder" >
+                        <img src="${product.image}" alt="" loading="lazy">
+                        <div class="card-actions">
+                            <button class="action-btn" aria-label="add to cart">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            </button>
+              
+                            <button class="action-btn" aria-label="add to whishlist">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </button>
+              
+                            <button class="action-btn" aria-label="compare">
+                                <i class="fa fa-info" aria-hidden="true"></i>
+                            </button>
+              
+                        </div>
+                    </div>
+              
+                              <div class="card-content">
+              
+                                <div class="price">
+                                  <span class="span">$${product.price}</span>
+                                </div>
+              
+                                <h3 class="card-title">${product.name}</h3>
+              
+                                <div class="card-rating">
+              
+                                  <div class="rating-wrapper" aria-label="5 start rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div>
+              
+                                  <p class="rating-text">5170 reviews</p>
+              
+                                </div>
+              
+                              </div>
+              
+                            </div>
+                            </div>`
                 listProductHTML.appendChild(newProduct);
 
             });

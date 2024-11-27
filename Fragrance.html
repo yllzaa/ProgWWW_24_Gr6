@@ -1,44 +1,39 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Fragrance E-Commerce</title>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Fragrance E-Commerce</title>
            
     
-            <link rel="stylesheet" href="css/style.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-            <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
-            <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-
-      
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <body>
-            <div id="header"></div> <!-- Placeholder for the header -->
+          <div id="header"></div> <!-- Placeholder for the header -->
 
-            <script>
-            // Load header.html into the #header div
+          <script>
+          // Load header.html into the #header div
             fetch('header.html')
-                .then(response => response.text())
-                .then(data => document.getElementById('header').innerHTML = data)
-                .catch(error => console.error('Error loading header:', error));
-            </script>
+              .then(response => response.text())
+              .then(data => document.getElementById('header').innerHTML = data)
+              .catch(error => console.error('Error loading header:', error));
+          </script>
 
 
             
-            <div class="container">
-                <div class="sloganbox">
-                  <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-                    <source src="Videos/dior-holliday-ad.mp4" type="video/mp4">
-                  </video>
+          <div class="container">
+              <div class="sloganbox">
+                <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+                  <source src="Videos/dior-holliday-ad.mp4" type="video/mp4">
+                </video>
 
-                  <div class="textBox" style="text-align: center;">
-                    <h2>New Limited Edition</h2>
-                    <h1>Bottled for the Season.</h1>
-                  </div>
-                    
+                <div class="textBox" style="text-align: center;">
+                  <h2>New Limited Edition</h2>
+                  <h1>Bottled for the Season.</h1>
                 </div>
+                    
+              </div>
 
               <section class="section products" id="Products">
                 <div class="products-coll">
@@ -138,7 +133,6 @@
                                 </h3>
               
                                 <div class="card-rating">
-              
                                   <div class="rating-wrapper" aria-label="5 start rating">
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                     <i class="fa fa-star" aria-hidden="true"></i>
