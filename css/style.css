@@ -661,12 +661,11 @@ footer{
 /* SHOPS STYLE */
 .listProduct{
     display: grid;
+    background-color: var(--beige);
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin: 20px;
-    margin-top: 40px;
-    
-    
+    padding: 20px;
+    /* margin-top: 40px; */    
 }
 .listProduct .item{
     background-color: white;
@@ -680,8 +679,8 @@ footer{
 
 }
 .listProduct .item img{
-    width: 120%;
-    margin-left: -8%;
+    width: 100%;
+    /* margin-left: -8%; */
     height: auto;
     /* justify-self:center; */
     /* position: relative; */

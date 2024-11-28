@@ -19,13 +19,17 @@
     </script>
     
     <div class="container">
+    
         <div class="sloganbox" style="background-image: url(Pictures/bgimage2.jpg);">
             <div class="textBox" style="text-align: center;">
                 <h3 class="labelText">Perfume Isle</h3>
                 <h2>Perfume Collection</h2>
             </div>
-
         </div>
+        <!-- <div class="shirit">
+            <button>FILTER</button>
+            <button>ORDER</button>
+        </div> -->
         <div class="listProduct">
 
         </div>
@@ -41,7 +45,7 @@
         // https://www.youtube.com/watch?v=okyfcpZfPAU&t=142s
         let products = null;
         // get datas from file json
-        fetch('js/products.json')
+        fetch('js/perfumes.json')
             .then(response => response.json())
             .then(data => {
                 products = data;
