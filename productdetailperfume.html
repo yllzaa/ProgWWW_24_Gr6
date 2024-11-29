@@ -48,7 +48,7 @@
     <script>
         let products = null;
         // get datas from file json
-        fetch('js/products.json')
+        fetch('js/perfumes.json')
             .then(response => response.json())
             .then(data => {
                 products = data;
@@ -78,7 +78,7 @@
             // Display similar products
             (products.filter(value => value.id != productId)).forEach(product => {
                 let newProduct = document.createElement('a');
-                newProduct.href = '/productdetail.html?id=' + product.id;
+                newProduct.href = '/productdetailperfume.html?id=' + product.id;
                 newProduct.classList.add('item');
                 newProduct.innerHTML = 
                 `<img src="${product.image}" alt="">
