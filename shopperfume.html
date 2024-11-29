@@ -38,11 +38,7 @@
     
 
     <script>
-        //Important note: If you have downloaded the code
-        // but still encounter errors when running the program,
-         //    please watch the video at this link because
-        // I have shown you how to run the project properly.
-        // https://www.youtube.com/watch?v=okyfcpZfPAU&t=142s
+        
         let products = null;
         // get datas from file json
         fetch('js/perfumes.json')
@@ -61,7 +57,7 @@
         {
             products.forEach(product => {
                 let newProduct = document.createElement('a');
-                newProduct.href = '/productdetail.html?id=' + product.id;
+                newProduct.href = '/productdetailperfume.html?id=' + product.id;
                 newProduct.classList.add('item');
                 newProduct.innerHTML = 
                 `<div class="shop-card" style="width:100%;">

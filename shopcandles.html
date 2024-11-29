@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -19,7 +19,13 @@
     </script>
     
     <div class="container">
-        <div class="title">PRODUCT LIST</div>
+        <div class="sloganbox" style="background-image: url(Pictures/bgimage2.jpg); background-position-y:center ;">
+            <div class="textBox" style="text-align: center;">
+                <h3 class="labelText">Candle Isle</h3>
+                <h2>Candle Collection</h2>
+            </div>
+
+        </div>
         <div class="listProduct">
 
         </div>
@@ -28,14 +34,10 @@
     
 
     <script>
-        //Important note: If you have downloaded the code
-        // but still encounter errors when running the program,
-         //    please watch the video at this link because
-        // I have shown you how to run the project properly.
-        // https://www.youtube.com/watch?v=okyfcpZfPAU&t=142s
+      
         let products = null;
         // get datas from file json
-        fetch('js/products.json')
+        fetch('js/candles.json')
             .then(response => response.json())
             .then(data => {
                 products = data;
@@ -51,19 +53,59 @@
         {
             products.forEach(product => {
                 let newProduct = document.createElement('a');
-                newProduct.href = '/productdetail.html?id=' + product.id;
+                newProduct.href = '/productdetailcandle.html?id=' + product.id;
                 newProduct.classList.add('item');
                 newProduct.innerHTML = 
-                `<img src="${product.image}" alt="">
-                <h2>${product.name}</h2>
-                <div class="price">$${product.price}</div>`;
+                `<div class="shop-card" style="width:100%;">
+                    <div class="card-banner img-holder" >
+                        <img src="${product.image}" alt="" loading="lazy">
+                        <div class="card-actions">
+                            <button class="action-btn" aria-label="add to cart">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            </button>
+              
+                            <button class="action-btn" aria-label="add to whishlist">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </button>
+              
+                            <button class="action-btn" aria-label="compare">
+                                <i class="fa fa-info" aria-hidden="true"></i>
+                            </button>
+              
+                        </div>
+                    </div>
+              
+                              <div class="card-content">
+              
+                                <div class="price">
+                                  <span class="span">$${product.price}</span>
+                                </div>
+              
+                                <h3 class="card-title">${product.name}</h3>
+              
+                                <div class="card-rating">
+              
+                                  <div class="rating-wrapper" aria-label="5 start rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div>
+              
+                                  <p class="rating-text">5170 reviews</p>
+              
+                                </div>
+              
+                              </div>
+              
+                            </div>
+                            </div>`
                 listProductHTML.appendChild(newProduct);
 
             });
         }
     }
 
-    
     </script>
 
 <footer>
@@ -80,5 +122,6 @@
         .catch(error => console.error('Error loading footer:', error));
     };
   </script>
+  
 </body>
 </html>
