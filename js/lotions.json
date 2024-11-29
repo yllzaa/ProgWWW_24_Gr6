@@ -1,107 +1,107 @@
 [
     {
-        "id": 1,
-        "name":"Sakura Blooms",
+        "id": 201,
+        "name":"Blue Hawaii",
         "price": 200,
-        "image": "Pictures/PerfumeColl/PinkPerfume.png",
+        "image": "Pictures/LotionColl/AquamarineLotion.jpg",
         "description": "Experience the essence of timeless elegance with Elysian Bloom, a fragrance that captures the delicate balance between floral grace and sophisticated warmth. This enchanting scent opens with bright, fresh notes of bergamot and lemon blossom, evoking the first rays of morning light. As it evolves, a heart of jasmine and rose unfurls, intertwining with hints of lily-of-the-valley, creating a bouquet of pure femininity."
     },
     {
-        "id": 2,
-        "name":"Forest Reverie",
+        "id": 202,
+        "name":"Opium Obsidian",
         "price": 250,
-        "image": "Pictures/PerfumeColl/ForestPerfume.png",
+        "image": "Pictures/LotionColl/BlackLotion.jpg",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
-        "id": 3,
-        "name":"Celeste Noir",
+        "id": 203,
+        "name":"Blackberry Blood",
         "price": 290,
-        "image": "Pictures/PerfumeColl/NightPerfume.png",
+        "image": "Pictures/LotionColl/BloodLotion.jpg",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
-        "id": 4,
-        "name":"Crimson Kiss",
+        "id": 204,
+        "name":"Baby Breath",
         "price": 200,
-        "image": "Pictures/PerfumeColl/BloodPerfume.png",
+        "image": "Pictures/LotionColl/BlueLotion.jpg",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
-        "id": 5,
-        "name":"Steel Rain",
+        "id": 205,
+        "name":"Silk & Smoke",
         "price": 300,
-        "image": "Pictures/PerfumeColl/BluePerfume.png",
+        "image": "Pictures/LotionColl/BrownLotion.jpg",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
-        "id": 6,
-        "name":"Ocean Foam",
+        "id": 206,
+        "name":"Pillow Princess",
         "price": 200,
-        "image": "Pictures/PerfumeColl/TealPerfume.png",
+        "image": "Pictures/LotionColl/DarkPinkLotion.jpg",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
-        "id": 7,
-        "name":"Citrus Cascade",
+        "id": 207,
+        "name":"Moss & Moonlight",
         "price": 200,
-        "image": "Pictures/PerfumeColl/GreenPerfume.png",
+        "image": "Pictures/LotionColl/ForestLotion.jpg",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
-        "id": 8,
+        "id": 208,
+        "name":"Wisteria Wish",
+        "price": 200,
+        "image": "Pictures/LotionColl/LavenderLotion.jpg",
+        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+    },
+    {
+        "id": 209,
+        "name":"California Girls",
+        "price": 200,
+        "image": "Pictures/LotionColl/LimeLotion.jpg",
+        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+    },
+    {
+        "id": 210,
+        "name":"Moonlit Caress",
+        "price": 200,
+        "image": "Pictures/LotionColl/NightLotion.jpg",
+        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+    },
+    {
+        "id": 211,
+        "name":"Desert Rose",
+        "price": 200,
+        "image": "Pictures/LotionColl/PinkLotion.jpg",
+        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+    },
+    {
+        "id": 212,
         "name":"Poppy Milk",
         "price": 200,
-        "image": "Pictures/PerfumeColl/PoppyPerfume.png",
+        "image": "Pictures/LotionColl/PoppyLotion.jpg",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
-        "id": 9,
-        "name":"Blue Hawaii",
-        "price": 200,
-        "image": "Pictures/PerfumeColl/AquaticPerfume.png",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
-    },
-    {
-        "id": 10,
-        "name":"Velvet Lavander",
-        "price": 200,
-        "image": "Pictures/PerfumeColl/PurplePerfume.png",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
-    },
-    {
-        "id": 11,
+        "id": 213,
         "name":"Barely Red",
         "price": 200,
-        "image": "Pictures/PerfumeColl/RedPerfume.png",
+        "image": "Pictures/LotionColl/RedLotion.jpg",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
-        "id": 12,
-        "name":"Honey Ember",
+        "id": 214,
+        "name":"Ocean Foam",
         "price": 200,
-        "image": "Pictures/PerfumeColl/YellowPerfume.png",
+        "image": "Pictures/LotionColl/TealLotion.jpg",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     },
     {
-        "id": 13,
+        "id": 215,
         "name":"La Passion",
         "price": 200,
-        "image": "Pictures/PerfumeColl/FirePerfume.png",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
-    },
-    {
-        "id": 14,
-        "name":"Opium Obsidian",
-        "price": 200,
-        "image": "Pictures/PerfumeColl/BlackPerfume.png",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
-    },
-    {
-        "id": 15,
-        "name":"Cocoa Beans",
-        "price": 200,
-        "image": "Pictures/PerfumeColl/BrownPerfume.png",
+        "image": "Pictures/LotionColl/OrangeLotion.jpg",
         "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
     }
 
