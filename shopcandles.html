@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Candle Isle</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,13 +19,17 @@
     </script>
     
     <div class="container">
-        <div class="sloganbox" style="background-image: url(Pictures/bgimage2.jpg); background-position-y:center ;">
+    
+        <div class="sloganbox" style="background-image: url(Pictures/bgimage5.jpg);">
             <div class="textBox" style="text-align: center;">
                 <h3 class="labelText">Candle Isle</h3>
                 <h2>Candle Collection</h2>
             </div>
-
         </div>
+        <!-- <div class="shirit">
+            <button>FILTER</button>
+            <button>ORDER</button>
+        </div> -->
         <div class="listProduct">
 
         </div>
@@ -34,7 +38,7 @@
     
 
     <script>
-      
+        
         let products = null;
         // get datas from file json
         fetch('js/candles.json')
@@ -53,7 +57,7 @@
         {
             products.forEach(product => {
                 let newProduct = document.createElement('a');
-                newProduct.href = '/productdetailcandle.html?id=' + product.id;
+                newProduct.href = '/productdetailperfume.html?id=' + product.id;
                 newProduct.classList.add('item');
                 newProduct.innerHTML = 
                 `<div class="shop-card" style="width:100%;">
