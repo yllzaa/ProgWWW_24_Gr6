@@ -1,108 +1,107 @@
 [
     {
         "id": 301,
-        "name":"Espresso",
+        "name": "Espresso",
         "price": 20,
         "image": "Pictures/CandleColl/BeigeCandle.jpg",
         "description": "Experience the essence of timeless elegance with Elysian Bloom, a fragrance that captures the delicate balance between floral grace and sophisticated warmth. This enchanting scent opens with bright, fresh notes of bergamot and lemon blossom, evoking the first rays of morning light. As it evolves, a heart of jasmine and rose unfurls, intertwining with hints of lily-of-the-valley, creating a bouquet of pure femininity."
     },
     {
         "id": 302,
-        "name":"Opium Obsidian",
+        "name": "Opium Obsidian",
         "price": 15,
         "image": "Pictures/CandleColl/BlackCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "A bold, captivating scent, Opium Obsidian combines the richness of deep amber and incense with a whisper of exotic floral notes. This fragrance wraps you in a luxurious embrace, leaving a trail of mystery and allure."
     },
     {
         "id": 303,
-        "name":"Blackberry Blood",
+        "name": "Blackberry Blood",
         "price": 25,
         "image": "Pictures/CandleColl/BloodCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "A daring fusion of ripe blackberries and red berries with an undercurrent of smoky depth, Blackberry Blood is an intense fragrance that evokes mystery and passion. Rich, bold, and slightly sweet, it's the perfect scent for those who crave complexity."
     },
     {
         "id": 304,
-        "name":"Baby Breath",
+        "name": "Baby Breath",
         "price": 25,
         "image": "Pictures/CandleColl/BlueCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "Soft and airy, Baby Breath captures the delicate innocence of fresh flowers with a touch of powdery sweetness. It’s a fragrance that evokes warmth, comfort, and a serene atmosphere, perfect for moments of quiet reflection."
     },
     {
         "id": 305,
-        "name":"Silk & Smoke",
+        "name": "Silk & Smoke",
         "price": 20,
         "image": "Pictures/CandleColl/BrownCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "A rich blend of smooth silk and smoky wood, this fragrance offers an intriguing contrast. The softness of silk is complemented by the smoky, earthy notes of sandalwood and amber, creating a warm, inviting ambiance."
     },
     {
         "id": 306,
-        "name":"Pillow Princess",
+        "name": "Pillow Princess",
         "price": 15,
         "image": "Pictures/CandleColl/DarkPinkCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "Pillow Princess offers a gentle and romantic scent, blending soft florals with a subtle sweetness. It’s an invitation to relaxation and a peaceful night’s rest, wrapped in the soft embrace of rose and lavender."
     },
     {
         "id": 307,
-        "name":"Moss & Moonlight",
+        "name": "Moss & Moonlight",
         "price": 20,
         "image": "Pictures/CandleColl/ForestCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "Moss & Moonlight conjures the magic of a midnight walk in the forest, where fresh mossy earth meets the glow of moonlight. This fragrance combines green moss, light florals, and a hint of musky depth, creating a refreshing yet mysterious atmosphere."
     },
     {
         "id": 308,
-        "name":"Wisteria Wish",
+        "name": "Wisteria Wish",
         "price": 20,
         "image": "Pictures/CandleColl/LavenderCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "A dreamlike fragrance, Wisteria Wish captures the delicate beauty of wisteria blooms with a touch of fresh lavender. The airy, floral notes evoke a sense of peace and serenity, like a gentle breeze on a spring day."
     },
     {
         "id": 309,
-        "name":"California Girls",
+        "name": "California Girls",
         "price": 20,
         "image": "Pictures/CandleColl/LimeCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "California Girls is a vibrant, zesty scent that brings together fresh lime, citrus, and tropical fruits. It’s a playful, uplifting fragrance that feels like a sunny beach day, with a touch of fun and energy."
     },
     {
         "id": 310,
-        "name":"Moonlit Caress",
+        "name": "Moonlit Caress",
         "price": 20,
         "image": "Pictures/CandleColl/NightCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "Moonlit Caress blends soft florals and the cool, calming essence of night. With notes of jasmine, violet, and sandalwood, it’s a romantic, soothing fragrance that evokes the quiet beauty of a moonlit evening."
     },
     {
         "id": 311,
-        "name":"Desert Rose",
+        "name": "Desert Rose",
         "price": 20,
         "image": "Pictures/CandleColl/PinkCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "Desert Rose captures the mystique of the desert at sunset. With rich floral notes of rose and jasmine, and an earthy touch of musk, it’s a fragrance that feels both exotic and timeless."
     },
     {
         "id": 312,
-        "name":"Poppy Milk",
+        "name": "Poppy Milk",
         "price": 15,
         "image": "Pictures/CandleColl/PoppyCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "A soft, comforting fragrance, Poppy Milk blends creamy milk with a gentle poppy floral note. The result is a sweet, cozy scent that evokes warmth and tenderness, perfect for moments of relaxation."
     },
     {
         "id": 313,
-        "name":"Barely Red",
+        "name": "Barely Red",
         "price": 20,
         "image": "Pictures/CandleColl/RedCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "Barely Red is a sophisticated fragrance that balances the subtle sweetness of ripe berries with the depth of red musk and vanilla. It’s a sensual, warm scent that’s perfect for cozy evenings and intimate moments."
     },
     {
         "id": 314,
-        "name":"Ocean Foam",
+        "name": "Ocean Foam",
         "price": 25,
         "image": "Pictures/CandleColl/TealCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "Ocean Foam brings the freshness of the sea with its clean, airy notes of sea salt, ocean breeze, and a hint of citrus. It’s a revitalizing fragrance that feels like a refreshing dip in the ocean."
     },
     {
         "id": 315,
-        "name":"La Passion",
+        "name": "La Passion",
         "price": 25,
         "image": "Pictures/CandleColl/OrangeCandle.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "La Passion is a bold, captivating fragrance that blends the warmth of orange blossom and spicy cinnamon with a hint of vanilla. It’s a passionate, fiery scent that’s perfect for those who love rich, vibrant aromas."
     }
-
 ]

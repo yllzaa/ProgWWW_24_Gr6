@@ -28,7 +28,6 @@
                 <h1 class="name"></h1>
                 <div class="price"></div>
                 <div class="buttons">
-                    <button>Check Out</button>
                     <button id="addToCartBtn">Add To Cart 
                         <span>
                             <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
@@ -43,6 +42,9 @@
 
         <div class="title">Similar product</div>
         <div class="listProduct"></div>
+
+        <!-- Add a message container at the bottom -->
+        <div id="cartMessage" class="cart-message"></div>
     </div>
 
     <script>
@@ -81,7 +83,7 @@
                 newProduct.href = '/productdetailperfume.html?id=' + product.id;
                 newProduct.classList.add('item');
                 newProduct.innerHTML = 
-                `<img src="${product.image}" alt="">
+                `<img src="${product.image}" alt=""/>
                 <h2>${product.name}</h2>
                 <div class="price">$${product.price}</div>`;
                 listProduct.appendChild(newProduct);
@@ -100,7 +102,20 @@
             }
             // Save updated cart to localStorage
             localStorage.setItem('cart', JSON.stringify(cart));
-            alert('Product added to cart!');
+
+            // Show message at the bottom of the window
+            showCartMessage('Product added to cart!');
+        }
+
+        function showCartMessage(message) {
+            let messageContainer = document.getElementById('cartMessage');
+            messageContainer.innerText = message;
+            messageContainer.classList.add('show'); // Add a class to animate the message in
+
+            // Hide the message after 3 seconds
+            setTimeout(() => {
+                messageContainer.classList.remove('show');
+            }, 3000);
         }
     </script>
 </body>

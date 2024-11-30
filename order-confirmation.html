@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation | SOLEIL</title>
+    <style>
+        /* General Page Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f0f8;
+            color: #5d5d5d;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/soft-scent-background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Container for the order page */
+        .container {
+            width: 90%;
+            margin: 40px auto;
+            max-width: 1000px;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 600;
+            color: #9b6c88;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        /* Order Summary Section */
+        .order-summary {
+            margin-bottom: 30px;
+        }
+
+        .order-summary h3 {
+            font-size: 24px;
+            color: #9b6c88;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .order-item .name {
+            font-weight: 500;
+            color: #5d5d5d;
+        }
+
+        .order-item .price {
+            font-weight: 600;
+            color: #9b6c88;
+        }
+
+        /* Total Price */
+        .total {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: right;
+            color: #9b6c88;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        /* User Details Section */
+        .user-details {
+            margin-bottom: 30px;
+        }
+
+        .user-details h3 {
+            font-size: 24px;
+            color: #9b6c88;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        .user-details p {
+            font-size: 18px;
+            color: #5d5d5d;
+        }
+
+        .user-details p strong {
+            color: #9b6c88;
+        }
+
+        /* Button Styling */
+        .confirmation-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .confirmation-buttons button {
+            width: 48%;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            border-radius: 30px; /* Rounded corners for soft look */
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: 1px;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        /* "Everything Looks Good!" Button Style */
+        .confirmation-buttons .confirm {
+            background-color: #b8e0d2; /* Pastel mint green */
+            color: white;
+            box-shadow: 0 4px 8px rgba(179, 224, 210, 0.3); /* Subtle soft shadow */
+        }
+
+        .confirmation-buttons .confirm:hover {
+            background-color: #a3d5c4; /* Slightly darker mint green */
+            box-shadow: 0 6px 12px rgba(179, 224, 210, 0.5); /* Enhanced shadow */
+        }
+
+        .confirmation-buttons .confirm:active {
+            background-color: #98cdb8; /* Slightly muted color on click */
+            box-shadow: 0 3px 6px rgba(179, 224, 210, 0.6);
+        }
+
+        /* "Go Back to Checkout" Button Style */
+        .confirmation-buttons .back {
+            background-color: #d1b6e0; /* Pastel lavender */
+            color: white;
+            box-shadow: 0 4px 8px rgba(209, 182, 224, 0.3);
+        }
+
+        .confirmation-buttons .back:hover {
+            background-color: #c0a0d1; /* Slightly darker lavender */
+            box-shadow: 0 6px 12px rgba(209, 182, 224, 0.5);
+        }
+
+        .confirmation-buttons .back:active {
+            background-color: #b594c4; /* Slightly muted lavender */
+            box-shadow: 0 3px 6px rgba(209, 182, 224, 0.6);
+        }
+
+        /* Remove outline on button focus */
+        button:focus {
+            outline: none;
+        }
+
+        /* Button Text Effects */
+        .confirmation-buttons button:hover {
+            font-weight: 600; /* Bold the text on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header"></div> <!-- Placeholder for the header -->
+
+    <script>
+        // Load header.html into the #header div
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data)
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+
+    <div class="container">
+        <div class="title">Order Confirmation</div>
+
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div id="orderItems"></div>
+
+            <div class="total">
+                Total: $<span id="totalPrice">0</span>
+            </div>
+        </div>
+
+        <div class="user-details">
+            <h3>Shipping Information</h3>
+            <p><strong>Name:</strong> <span id="userName"></span></p>
+            <p><strong>Address:</strong> <span id="userAddress"></span></p>
+            <p><strong>Payment:</strong> <span id="userPayment"></span></p>
+        </div>
+
+        <div class="confirmation-buttons">
+            <button class="confirm" onclick="confirmOrder()">Everything Looks Good!</button>
+            <button class="back" onclick="goBackToCheckout()">Go Back to Checkout</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to load the order data from localStorage and display it
+        function loadOrder() {
+            let order = JSON.parse(localStorage.getItem('order'));
+
+            if (!order) {
+                alert('No order found. Please complete the checkout first.');
+                window.location.href = 'checkout.html'; // Redirect to checkout if no order
+                return;
+            }
+
+            // Display order items
+            let orderItemsContainer = document.getElementById('orderItems');
+            let totalPrice = 0;
+
+            order.cart.forEach(item => {
+                totalPrice += item.price * item.quantity;
+
+                let orderItem = document.createElement('div');
+                orderItem.classList.add('order-item');
+                orderItem.innerHTML = `
+                    <div class="name">${item.name} (x${item.quantity})</div>
+                    <div class="price">$${(item.price * item.quantity).toFixed(2)}</div>
+                `;
+                orderItemsContainer.appendChild(orderItem);
+            });
+
+            // Display total price
+            document.getElementById('totalPrice').innerText = totalPrice.toFixed(2);
+
+            // Display user information
+            document.getElementById('userName').innerText = order.name;
+            document.getElementById('userAddress').innerText = order.address;
+            document.getElementById('userPayment').innerText = order.payment;
+
+             // Display payment method
+             let paymentMethod = order.paymentMethod || 'Not selected';  // Fallback if no payment method
+            document.getElementById('userPayment').innerText = paymentMethod;
+        }
+
+        // Function to confirm the order
+        function confirmOrder() {
+            let order = JSON.parse(localStorage.getItem('order'));
+            if (order) {
+                alert('Your order has been confirmed. Thank you for shopping with us!');
+                // Optionally, you can clear the cart and order data here
+                localStorage.removeItem('cart');
+                localStorage.removeItem('order');
+                window.location.href = 'thank-you.html'; // Redirect to a thank you page
+            }
+        }
+
+        // Function to go back to checkout page
+        function goBackToCheckout() {
+            window.location.href = 'checkout.html';
+        }
+
+        // Load order data on page load
+        loadOrder();
+    </script>
+
+</body>
+</html>
