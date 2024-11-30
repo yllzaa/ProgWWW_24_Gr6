@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragrance Thank You</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f1f7;
+            color: #6a4c98;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #6a4c98;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #8e7cc3;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background-color: #e6a1d3;
+            color: #fff;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #d081bc;
+        }
+
+        .flower {
+            background-image: url('https://www.transparenttextures.com/patterns/flower-power.png');
+            background-repeat: repeat;
+            padding: 20px;
+        }
+
+        .thank-you-message {
+            display: none;
+            font-size: 1.5em;
+            color: #d08dd8;
+            margin-top: 30px;
+            font-style: italic;
+        }
+
+        /* Flexbox for horizontal button layout */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Add space between buttons */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container flower">
+        <h1>Thank You for Shoping with Us</h1>
+        <p>Click the button below to receive a message of appreciation.</p>
+        
+        <div class="button-container">
+            <button onclick="goToMainPage()">Go to Main Page</button>
+        </div>
+        <div>
+            <button onclick="showThankYouMessage()">Show Appreciation</button>
+            <p class="thank-you-message">Thank you for your sweet presence! 🌸 Your kindness is like the most delightful fragrance in the air!</p>
+        </div>
+    </div>
+
+    <script>
+        function showThankYouMessage() {
+            const message = document.querySelector('.thank-you-message');
+            message.style.display = 'block';
+        }
+
+        function goToMainPage() {
+           
+            window.location.href = 'Fragrance.html'; 
+        }
+    </script>
+
+</body>
+</html>
