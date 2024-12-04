@@ -19,11 +19,6 @@
             margin-bottom: 20px;
             /* line-height: 1.5em; */
         }
-        /* main h1, h2 {
-            color: #333;
-            margin-bottom: 15px;
-            font-family: 'Playfair Display', serif;
-        } */
         footer {
             text-align: center;
             /* padding: 15px; */
@@ -42,16 +37,15 @@
         .team-member {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            margin-top: 20px;
             background-color: #f9f9f9;
             padding: 10px;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
         .labelText{
             font-size: 18px;
-            /* margin-top: 20px; */
             padding-top: 25px;
         }
         .team-member:hover {
@@ -69,13 +63,8 @@
         .team-member div {
             flex: 1;
         }
-        a {
-            color: #3f7a5c;
-            text-decoration: none;
-            font-weight: bold; 
-        }
-        a:hover {
-            text-decoration: underline;
+        .card-title:hover{
+            color: palevioletred;
         }
     </style>
 </head>
@@ -93,7 +82,7 @@
 
 <main>
     <h2 class="labelText">Our Story</h2>
-    <p class="desc-text">Welcome to <strong>SOLEIL</strong>, where we believe that fragrance is an art form. Founded in 2024, our journey began with a passion for creating unique and captivating scents that evoke emotions and memories. Our founders envisioned a brand that would connect people through the power of fragrance.</p>
+    <p class="desc-text">Welcome to <u>SOLEIL</u>, where we believe that fragrance is an art form. Founded in 2024, our journey began with a passion for creating unique and captivating scents that evoke emotions and memories. Our founders envisioned a brand that would connect people through the power of fragrance.</p>
 
     <h2 class="labelText">Our Mission</h2>
     <p class="desc-text">Our mission is to provide high-quality, handcrafted fragrances that inspire and uplift. We source the finest ingredients from around the world, ensuring that each bottle tells a story of its own. Every scent we create aims to transport you to a different place or moment, creating a personal connection.</p>
@@ -109,9 +98,9 @@
     
     <h2 class="labelText">Our Values</h2>
     <ul class="desc-text">
-        <li><strong>Quality:</strong> We prioritize excellence in every product we create.</li>
-        <li><strong>Sustainability:</strong> We are committed to eco-friendly practices and sourcing materials responsibly.</li>
-        <li><strong>Innovation:</strong> We constantly explore new ideas to bring fresh scents to our customers.</li>
+        <li><em>Quality:</em> We prioritize excellence in every product we create.</li>
+        <li><em>Sustainability:</em> We are committed to eco-friendly practices and sourcing materials responsibly.</li>
+        <li><em>Innovation:</em> We constantly explore new ideas to bring fresh scents to our customers.</li>
     </ul>
 
     <h2 class="labelText">Meet the Team</h2>
@@ -135,7 +124,7 @@
     </div>
 
     <h2 class="labelText">Get in Touch</h2>
-    <p class="desc-text">We love to hear from our customers! Whether you have questions about our products or just want to say hello, feel free to <a href="contact.html">contact us</a>.</p>
+    <p class="desc-text">We love to hear from our customers! Whether you have questions about our products or just want to say hello, feel free to <a href="#footer" class="card-title">contact us</a>.</p>
 </main>
 
 <footer>

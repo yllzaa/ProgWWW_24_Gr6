@@ -10,19 +10,131 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
    <style>
-    *{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
+      *{
+         box-sizing: border-box;
+         margin:0;
+         padding:0;}
 
-}
+         footer{
+         background-color: #000000ff;
+         position: relative;
+         width: 100%;
+         min-height: 350px;
+         padding: 3rem 1rem;
+      }
+      .container-footer {
+         max-width: 1140px;
+         margin: 0 auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+      }
+      .row{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
 
+      .col{
+         min-width: 250px;
+         color:#f2f2f2f2;
+         font-family: poppins;
+         padding:0 2rem;
+      }
+      .col .logo{
+         width: 100px;
+         margin-bottom:25px;
+      }
+      .col h3{
+         color:var(--softPink);
+         margin-bottom: 20px;
+         position: relative;
+         cursor: pointer;
+      }
+      .col h3::after{
+         content: '';
+         height:3px;
+         width:0px;
+         background-color: var(--softPink);
+         position: absolute;
+         bottom: 0;
+         left:0;
+         transition: 0.3s ease;
+
+      }
+      .col h3:hover::after{
+         width:30px
+      }
+      .col .social a i{
+         color: var(--softPink);
+         margin-top:2rem;
+         margin-right: 5px;
+         transition: 0.3s ease;
+      }
+      .col .social a i:hover{
+         transform: scale(1.5);
+         filter:grayscale(25);
+      }
+      .col .links a{
+         display: block;
+         text-decoration: none;
+         color:#f2f2f2;
+         margin-bottom: 5px;
+         position: relative;
+         transition: 0.3s ease;
+      }
+      .col .links a::before{
+         content:'';
+         height: 16px;
+         width:3px;
+         position: absolute;
+         top:5px;
+         left:-10px;
+         background-color: var(--softPink);
+         transition: 0.5s ease;
+         opacity: 0;
+      }
+      .col .links a:hover::before{
+         opacity: 1;
+      }
+      .col .links a:hover{
+         transform: translateX(-8px);
+         color:var(--softPink);
+      }
+      .col .contact-details{
+         display: inline-flex;
+         justify-content: space-between;
+      }
+      .col .contact-details i{
+         margin-right:15px;
+      }
+      .row .form{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding:2rem 0;
+      }
+      .row .form input{
+         background-color: #1a1c20ff;
+         border:0;
+         outline:none;
+         padding:14px 20px;
+         border-radius: 6px;
+         border-top-right-radius: 0;
+         border-bottom-right-radius: 0;
+      }
+      .form button{
+         padding:14px 20px;
+         border:0;
+         border-radius: 6px;
+         border-top-left-radius: 0;
+         border-bottom-left-radius: 0;
+         background-color: var(--softPink);
+      }
    </style>
-   
-    
-
-
 </head>
+
 <body>
      <footer>
         <div class="container-footer">
@@ -30,15 +142,15 @@
                   <div class="col" id="company">
                       <img src="Pictures/SoleilWhite.png" alt="" class="logo">
                       <p>
-                        We are specialized in designings, make your business a brand.
+                        We are specialized in fragrances, get your signature scent.
                         Try our premium services.
                       </p>
                       <div class="social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-youtube"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://fb.watch/wgc0conzrL/" target=”_blank”><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/p/CSeYforAqm4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target=”_blank”><i class="fa fa-instagram"></i></a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=isOjPogSxL0RYTTG" target=”_blank”><i class="fa fa-youtube"></i></a>
+                        <a href="https://x.com/rickroll_meme_/status/1855234204801634728" target=”_blank”><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/posts/arpitbuchha_aigenerations-activity-7163449792721739776-ygix?utm_source=share&utm_medium=member_desktop" target=”_blank”><i class="fa fa-linkedin"></i></a>
                       </div>
                   </div>
 
@@ -46,10 +158,9 @@
                   <div class="col" id="services">
                      <h3>Services</h3>
                      <div class="links">
-                        <a href="#">Illustration</a>
-                        <a href="#">Creatives</a>
-                        <a href="#">Poster Design</a>
-                        <a href="#">Card Design</a>
+                        <a href="shopperfume.html">Perfumes</a>
+                        <a href="shoplotions.html">Lotions</a>
+                        <a href="shopcandles.html">Candles</a>
                      </div>
                   </div>
 
@@ -67,7 +178,8 @@
                       <h3>Contact</h3>
                       <div class="contact-details">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                         <p>FF-42, Procube Avenue, <br> NY, USA</p>
+                         <!-- <p></p> -->
+                         <address>FF-42, Procube Avenue, <br> NY, USA</address>
                       </div>
                       <div class="contact-details">
                          <i class="fa fa-phone"></i>
