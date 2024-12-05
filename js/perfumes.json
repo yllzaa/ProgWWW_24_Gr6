@@ -2,106 +2,121 @@
     {
         "id": 1,
         "name": "Sakura Blooms",
-        "price": 200,
+        "price": "89.00",
         "image": "Pictures/PerfumeColl/PinkPerfume.jpg",
-        "description": "Inspired by the delicate beauty of cherry blossoms, Sakura Blooms captures the fleeting elegance of spring. Its light, fresh notes of bergamot and lemon blossom create a bright, invigorating opening, while a floral heart of jasmine and rose unfolds, with hints of lily-of-the-valley, evoking the beauty of blooming sakura flowers."
+        "description": "Inspired by the delicate beauty of cherry blossoms, Sakura Blooms captures the fleeting elegance of spring. Its light, fresh notes of bergamot and lemon blossom create a bright, invigorating opening, while a floral heart of jasmine and rose unfolds, with hints of lily-of-the-valley, evoking the beauty of blooming sakura flowers.",
+        "reviews": 950
     },
     {
         "id": 2,
         "name": "Forest Reverie",
-        "price": 250,
+        "price": "89.00",
         "image": "Pictures/PerfumeColl/ForestPerfume.jpg",
-        "description": "Step into an enchanted forest where nature's wonders unfold. Forest Reverie blends earthy tones of moss, sandalwood, and cedarwood with a subtle hint of wildflowers, creating a fragrance that evokes the serenity of a quiet woodland retreat. Perfect for those who appreciate the calming embrace of the great outdoors."
+        "description": "Step into an enchanted forest where nature's wonders unfold. Forest Reverie blends earthy tones of moss, sandalwood, and cedarwood with a subtle hint of wildflowers, creating a fragrance that evokes the serenity of a quiet woodland retreat. Perfect for those who appreciate the calming embrace of the great outdoors.",
+        "reviews": 1096
     },
     {
         "id": 3,
         "name": "Celeste Noir",
-        "price": 290,
+        "price": "129.00",
         "image": "Pictures/PerfumeColl/NightPerfume.jpg",
-        "description": "Celeste Noir is a rich, captivating fragrance designed for the mysterious night. This perfume opens with a bold combination of spicy saffron and smoky oud, before unveiling a heart of dark rose and amber, culminating in an intoxicating base of black musk and patchouli—ideal for the evening’s allure."
+        "description": "Celeste Noir is a rich, captivating fragrance designed for the mysterious night. This perfume opens with a bold combination of spicy saffron and smoky oud, before unveiling a heart of dark rose and amber, culminating in an intoxicating base of black musk and patchouli—ideal for the evening’s allure.",
+        "reviews": 3044
     },
     {
         "id": 4,
         "name": "Crimson Kiss",
-        "price": 200,
+        "price": "129.00",
         "image": "Pictures/PerfumeColl/BloodPerfume.jpg",
-        "description": "A seductive and powerful scent, Crimson Kiss evokes the intensity of passion and desire. This fragrance opens with the warmth of red fruits and a touch of spice, before giving way to a heart of deep, velvety roses and crimson berries. The lingering base of amber and vanilla adds a sweet, sensual finish."
+        "description": "A seductive and powerful scent, Crimson Kiss evokes the intensity of passion and desire. This fragrance opens with the warmth of red fruits and a touch of spice, before giving way to a heart of deep, velvety roses and crimson berries. The lingering base of amber and vanilla adds a sweet, sensual finish.",
+        "reviews": 4201
     },
     {
         "id": 5,
         "name": "Steel Rain",
-        "price": 300,
+        "price": "89.00",
         "image": "Pictures/PerfumeColl/BluePerfume.jpg",
-        "description": "Steel Rain is an invigorating fragrance, capturing the essence of a refreshing storm. Crisp and cool, this scent opens with aquatic notes of fresh rain, mingling with a hint of citrus and ocean breeze. The heart reveals subtle floral nuances, while the base of cedarwood and musk provides a grounding finish."
+        "description": "Steel Rain is an invigorating fragrance, capturing the essence of a refreshing storm. Crisp and cool, this scent opens with aquatic notes of fresh rain, mingling with a hint of citrus and ocean breeze. The heart reveals subtle floral nuances, while the base of cedarwood and musk provides a grounding finish.",
+        "reviews": 1182
     },
     {
         "id": 6,
         "name": "Ocean Foam",
-        "price": 200,
+        "price": "129.00",
         "image": "Pictures/PerfumeColl/TealPerfume.jpg",
-        "description": "Ocean Foam takes you to the edge of the sea, where salty air and foamy waves meet. This fresh and energizing fragrance combines zesty lime and green apple with the coolness of sea breeze. The heart features a light floral blend of jasmine and lavender, while the base of sandalwood and musk gives it a soft, lasting depth."
+        "description": "Ocean Foam takes you to the edge of the sea, where salty air and foamy waves meet. This fresh and energizing fragrance combines zesty lime and green apple with the coolness of sea breeze. The heart features a light floral blend of jasmine and lavender, while the base of sandalwood and musk gives it a soft, lasting depth.",
+        "reviews": 2896
     },
     {
         "id": 7,
         "name": "Citrus Cascade",
-        "price": 200,
+        "price": "59.00",
         "image": "Pictures/PerfumeColl/GreenPerfume.jpg",
-        "description": "Bursting with vitality, Citrus Cascade is a lively fragrance that embodies the zest of fresh citrus fruits. A vibrant blend of lemon, grapefruit, and lime provides a sparkling opening, leading to a heart of aromatic herbs and green leaves. The base is clean and crisp, with a touch of cedarwood to anchor the lively citrus notes."
+        "description": "Bursting with vitality, Citrus Cascade is a lively fragrance that embodies the zest of fresh citrus fruits. A vibrant blend of lemon, grapefruit, and lime provides a sparkling opening, leading to a heart of aromatic herbs and green leaves. The base is clean and crisp, with a touch of cedarwood to anchor the lively citrus notes.",
+        "reviews": 801
     },
     {
         "id": 8,
         "name": "Poppy Milk",
-        "price": 200,
+        "price": "79.00",
         "image": "Pictures/PerfumeColl/PoppyPerfume.jpg",
-        "description": "Poppy Milk is a soft, comforting fragrance that blends the warmth of creamy milk with the delicate scent of poppy flowers. This gentle scent opens with sweet, milky notes, followed by a heart of light floral notes, while the base of vanilla and amber wraps you in a soothing embrace."
+        "description": "Poppy Milk is a soft, comforting fragrance that blends the warmth of creamy milk with the delicate scent of poppy flowers. This gentle scent opens with sweet, milky notes, followed by a heart of light floral notes, while the base of vanilla and amber wraps you in a soothing embrace.",
+        "reviews": 2106
     },
     {
         "id": 9,
         "name": "Blue Hawaii",
-        "price": 200,
+        "price": "129.00",
         "image": "Pictures/PerfumeColl/AquaticPerfume.jpg",
-        "description": "Inspired by the tropical beauty of Hawaii, Blue Hawaii captures the essence of sun, sea, and sand. The fragrance opens with vibrant notes of pineapple and coconut, evoking a tropical breeze. A heart of frangipani and plumeria adds a floral touch, while the base of vanilla and musk evokes the warm sands beneath the sun."
+        "description": "Inspired by the tropical beauty of Hawaii, Blue Hawaii captures the essence of sun, sea, and sand. The fragrance opens with vibrant notes of pineapple and coconut, evoking a tropical breeze. A heart of frangipani and plumeria adds a floral touch, while the base of vanilla and musk evokes the warm sands beneath the sun.",
+        "reviews": 3082
     },
     {
         "id": 10,
         "name": "Velvet Lavander",
-        "price": 200,
+        "price": "79.00",
         "image": "Pictures/PerfumeColl/PurplePerfume.jpg",
-        "description": "Velvet Lavander is a refined, soothing fragrance that brings the calming scent of lavender to the forefront. A delicate blend of lavender and chamomile creates a peaceful opening, which transitions into a soft, powdery heart. The base features warm notes of amber and musk, adding a touch of elegance and depth."
+        "description": "Velvet Lavander is a refined, soothing fragrance that brings the calming scent of lavender to the forefront. A delicate blend of lavender and chamomile creates a peaceful opening, which transitions into a soft, powdery heart. The base features warm notes of amber and musk, adding a touch of elegance and depth.",
+        "reviews": 999
     },
     {
         "id": 11,
         "name": "Barely Red",
-        "price": 200,
+        "price": "89.00",
         "image": "Pictures/PerfumeColl/RedPerfume.jpg",
-        "description": "Barely Red is a subtly elegant fragrance that combines the fiery intensity of red fruits with a soft, floral heart. This scent opens with a burst of red berries, followed by a warm bouquet of roses and peony. The base of cedarwood and patchouli grounds the fragrance with a sophisticated finish."
+        "description": "Barely Red is a subtly elegant fragrance that combines the fiery intensity of red fruits with a soft, floral heart. This scent opens with a burst of red berries, followed by a warm bouquet of roses and peony. The base of cedarwood and patchouli grounds the fragrance with a sophisticated finish.",
+        "reviews": 4067
     },
     {
         "id": 12,
         "name": "Honey Ember",
-        "price": 200,
+        "price": "89.00",
         "image": "Pictures/PerfumeColl/YellowPerfume.jpg",
-        "description": "Warm and inviting, Honey Ember combines the sweet richness of honey with the deep warmth of amber. This fragrance opens with a golden honey note, which is balanced by a heart of florals like jasmine and orange blossom. The base of amber and sandalwood adds depth and sensuality."
+        "description": "Warm and inviting, Honey Ember combines the sweet richness of honey with the deep warmth of amber. This fragrance opens with a golden honey note, which is balanced by a heart of florals like jasmine and orange blossom. The base of amber and sandalwood adds depth and sensuality.",
+        "reviews": 1209
     },
     {
         "id": 13,
         "name": "La Passion",
-        "price": 200,
+        "price": "129.00",
         "image": "Pictures/PerfumeColl/FirePerfume.jpg",
-        "description": "La Passion is a fiery and intense fragrance that embodies deep desire and irresistible allure. The top notes of spicy cinnamon and fiery red pepper open the scent, while a heart of red roses and vanilla creates a passionate floral blend. The base of warm amber and musk adds a sensual, lasting finish."
+        "description": "La Passion is a fiery and intense fragrance that embodies deep desire and irresistible allure. The top notes of spicy cinnamon and fiery red pepper open the scent, while a heart of red roses and vanilla creates a passionate floral blend. The base of warm amber and musk adds a sensual, lasting finish.",
+        "reviews": 5690
     },
     {
         "id": 14,
         "name": "Opium Obsidian",
-        "price": 200,
+        "price": "89.00",
         "image": "Pictures/PerfumeColl/BlackPerfume.jpg",
-        "description": "Opium Obsidian is a dark and mysterious fragrance, invoking the allure of exotic spices and rare flowers. The scent opens with spicy cardamom and cloves, giving way to a rich heart of opulent florals like jasmine and orchid. The base features warm, smoky incense and patchouli, evoking the feeling of ancient rituals."
+        "description": "Opium Obsidian is a dark and mysterious fragrance, invoking the allure of exotic spices and rare flowers. The scent opens with spicy cardamom and cloves, giving way to a rich heart of opulent florals like jasmine and orchid. The base features warm, smoky incense and patchouli, evoking the feeling of ancient rituals.",
+        "reviews": 1021
     },
     {
         "id": 15,
         "name": "Cocoa Beans",
-        "price": 200,
+        "price": "79.00",
         "image": "Pictures/PerfumeColl/BrownPerfume.jpg",
-        "description": "Cocoa Beans is a luxurious and comforting fragrance that transports you to a rich, indulgent world of cocoa and chocolate. The opening notes of rich cocoa and sweet vanilla create an inviting warmth, while the heart reveals a subtle blend of florals and caramel. The base is rounded with warm musk and sandalwood, creating a perfect, cozy finish."
+        "description": "Cocoa Beans is a luxurious and comforting fragrance that transports you to a rich, indulgent world of cocoa and chocolate. The opening notes of rich cocoa and sweet vanilla create an inviting warmth, while the heart reveals a subtle blend of florals and caramel. The base is rounded with warm musk and sandalwood, creating a perfect, cozy finish.",
+        "reviews": 739
     }
 ]

@@ -2,106 +2,120 @@
     {
         "id": 201,
         "name": "Blue Hawaii",
-        "price": 200,
+        "price": "29.00",
         "image": "Pictures/LotionColl/AquamarineLotion.jpg",
-        "description": "Inspired by the tropical paradise of Hawaii, Blue Hawaii evokes the feeling of a refreshing ocean breeze. With notes of coconut, pineapple, and citrus, this lotion offers a tropical escape. A blend of creamy coconut milk and aloe vera soothes and hydrates the skin, leaving it soft and smooth with a hint of exotic fragrance."
+        "description": "Inspired by the tropical paradise of Hawaii, Blue Hawaii evokes the feeling of a refreshing ocean breeze. With notes of coconut, pineapple, and citrus, this lotion offers a tropical escape. A blend of creamy coconut milk and aloe vera soothes and hydrates the skin, leaving it soft and smooth with a hint of exotic fragrance.",
+        "reviews": 4431
     },
     {
         "id": 202,
         "name": "Opium Obsidian",
-        "price": 250,
+        "price": "19.00",
         "image": "Pictures/LotionColl/BlackLotion.jpg",
-        "description": "Opium Obsidian offers an indulgent blend of deep, smoky fragrances. This luxurious lotion combines rich notes of incense, black pepper, and saffron with the warmth of amber and vanilla, creating a bold yet comforting scent. It deeply nourishes the skin, leaving it silky smooth and enveloped in a seductive fragrance."
+        "description": "Opium Obsidian offers an indulgent blend of deep, smoky fragrances. This luxurious lotion combines rich notes of incense, black pepper, and saffron with the warmth of amber and vanilla, creating a bold yet comforting scent. It deeply nourishes the skin, leaving it silky smooth and enveloped in a seductive fragrance.",
+        "reviews": 950
     },
     {
         "id": 203,
         "name": "Blackberry Blood",
-        "price": 290,
+        "price": "29.00",
         "image": "Pictures/LotionColl/BloodLotion.jpg",
-        "description": "Blackberry Blood is a bold and invigorating scent, blending the sweetness of ripe blackberries with a touch of dark, juicy pomegranate. The lotion nourishes the skin with its rich, antioxidant-packed formula, leaving it soft and deeply hydrated. A warm, musky base enhances the fruity top notes, making this fragrance both sweet and sensual."
+        "description": "Blackberry Blood is a bold and invigorating scent, blending the sweetness of ripe blackberries with a touch of dark, juicy pomegranate. The lotion nourishes the skin with its rich, antioxidant-packed formula, leaving it soft and deeply hydrated. A warm, musky base enhances the fruity top notes, making this fragrance both sweet and sensual.",
+        "reviews": 1209
     },
     {
         "id": 204,
         "name": "Baby Breath",
-        "price": 200,
+        "price": "19.00",
         "image": "Pictures/LotionColl/BlueLotion.jpg",
-        "description": "Gentle and calming, Baby Breath brings a light, airy fragrance that evokes the softness of fresh flowers. This lotion’s delicate scent of baby’s breath and powdery florals is perfect for sensitive skin, providing long-lasting hydration while leaving the skin feeling soft, smooth, and enveloped in a gentle, comforting fragrance."
+        "description": "Gentle and calming, Baby Breath brings a light, airy fragrance that evokes the softness of fresh flowers. This lotion’s delicate scent of baby’s breath and powdery florals is perfect for sensitive skin, providing long-lasting hydration while leaving the skin feeling soft, smooth, and enveloped in a gentle, comforting fragrance.",
+        "reviews": 989
     },
     {
         "id": 205,
         "name": "Silk & Smoke",
-        "price": 300,
+        "price": "14.00",
         "image": "Pictures/LotionColl/BrownLotion.jpg",
         "description": "Silk & Smoke is a luxurious and sultry fragrance that combines the elegance of silk with the depth of smoky woods. Notes of amber, leather, and tobacco create a warm, enveloping scent, while the lotion’s rich formula deeply moisturizes and nourishes the skin, leaving it feeling soft and scented with an alluring fragrance."
     },
     {
         "id": 206,
         "name": "Pillow Princess",
-        "price": 200,
+        "price": "14.00",
         "image": "Pictures/LotionColl/DarkPinkLotion.jpg",
-        "description": "Pillow Princess is a sweet, indulgent fragrance that evokes the feeling of cozy comfort. With notes of fluffy marshmallow, vanilla bean, and a hint of pink sugar, this lotion wraps the skin in softness, providing deep hydration. The scent is light and playful, perfect for those who love sweet, comforting fragrances."
+        "description": "Pillow Princess is a sweet, indulgent fragrance that evokes the feeling of cozy comfort. With notes of fluffy marshmallow, vanilla bean, and a hint of pink sugar, this lotion wraps the skin in softness, providing deep hydration. The scent is light and playful, perfect for those who love sweet, comforting fragrances.",
+        "reviews": 3012
     },
     {
         "id": 207,
         "name": "Moss & Moonlight",
-        "price": 200,
+        "price": "19.00",
         "image": "Pictures/LotionColl/ForestLotion.jpg",
-        "description": "Moss & Moonlight is a rich, earthy fragrance that captures the mystery of a moonlit forest. The lotion combines fresh moss, sandalwood, and hints of lavender and cedar to create a deeply grounding scent. It deeply nourishes and moisturizes, leaving the skin soft and infused with the fresh, earthy scent of the forest."
+        "description": "Moss & Moonlight is a rich, earthy fragrance that captures the mystery of a moonlit forest. The lotion combines fresh moss, sandalwood, and hints of lavender and cedar to create a deeply grounding scent. It deeply nourishes and moisturizes, leaving the skin soft and infused with the fresh, earthy scent of the forest.",
+        "reviews": 472
     },
     {
         "id": 208,
         "name": "Wisteria Wish",
-        "price": 200,
+        "price": "24.00",
         "image": "Pictures/LotionColl/LavenderLotion.jpg",
-        "description": "Wisteria Wish is a delicate and romantic fragrance that brings the sweet scent of wisteria flowers to life. The lotion blends soft floral notes with a hint of fresh greenery, providing a soothing and calming experience. It hydrates and nourishes the skin, leaving it feeling silky smooth and subtly scented with the beauty of blooming wisteria."
+        "description": "Wisteria Wish is a delicate and romantic fragrance that brings the sweet scent of wisteria flowers to life. The lotion blends soft floral notes with a hint of fresh greenery, providing a soothing and calming experience. It hydrates and nourishes the skin, leaving it feeling silky smooth and subtly scented with the beauty of blooming wisteria.",
+        "reviews": 2190
     },
     {
         "id": 209,
         "name": "California Girls",
-        "price": 200,
+        "price": "29.00",
         "image": "Pictures/LotionColl/LimeLotion.jpg",
-        "description": "California Girls is a lively, fresh fragrance inspired by the bright sunshine of the West Coast. The lotion combines zesty lime, juicy grapefruit, and a touch of tropical coconut to create a vibrant, energizing scent. It hydrates and refreshes the skin, leaving it feeling cool and soft, perfect for sunny days."
+        "description": "California Girls is a lively, fresh fragrance inspired by the bright sunshine of the West Coast. The lotion combines zesty lime, juicy grapefruit, and a touch of tropical coconut to create a vibrant, energizing scent. It hydrates and refreshes the skin, leaving it feeling cool and soft, perfect for sunny days.",
+        "reviews": 3890
     },
     {
         "id": 210,
         "name": "Moonlit Caress",
-        "price": 200,
+        "price": "29.00",
         "image": "Pictures/LotionColl/NightLotion.jpg",
-        "description": "Moonlit Caress is a serene, romantic fragrance that evokes the feeling of a gentle caress under the night sky. The lotion blends soft floral notes of jasmine and tuberose with hints of creamy vanilla and sandalwood. It nourishes the skin while leaving it feeling soft, smooth, and lightly scented with the elegance of a moonlit evening."
+        "description": "Moonlit Caress is a serene, romantic fragrance that evokes the feeling of a gentle caress under the night sky. The lotion blends soft floral notes of jasmine and tuberose with hints of creamy vanilla and sandalwood. It nourishes the skin while leaving it feeling soft, smooth, and lightly scented with the elegance of a moonlit evening.",
+        "reviews": 2118
     },
     {
         "id": 211,
         "name": "Desert Rose",
-        "price": 200,
+        "price": "14.00",
         "image": "Pictures/LotionColl/PinkLotion.jpg",
-        "description": "Desert Rose is a warm, captivating fragrance inspired by the beauty of roses blooming in the desert. With notes of deep rose, amber, and a hint of spicy musk, this lotion offers a rich, exotic scent. It deeply moisturizes the skin, leaving it soft, smooth, and enveloped in a fragrance that evokes the magic of the desert."
+        "description": "Desert Rose is a warm, captivating fragrance inspired by the beauty of roses blooming in the desert. With notes of deep rose, amber, and a hint of spicy musk, this lotion offers a rich, exotic scent. It deeply moisturizes the skin, leaving it soft, smooth, and enveloped in a fragrance that evokes the magic of the desert.",
+        "reviews": 3890
     },
     {
         "id": 212,
         "name": "Poppy Milk",
-        "price": 200,
+        "price": "19.00",
         "image": "Pictures/LotionColl/PoppyLotion.jpg",
-        "description": "Poppy Milk is a comforting and nurturing fragrance that blends the soft sweetness of poppy flowers with creamy milk. The lotion’s gentle formula hydrates and soothes the skin, while the soft, floral scent of poppy is balanced by the creamy warmth of milk, creating a fragrance that is both relaxing and nourishing."
+        "description": "Poppy Milk is a comforting and nurturing fragrance that blends the soft sweetness of poppy flowers with creamy milk. The lotion’s gentle formula hydrates and soothes the skin, while the soft, floral scent of poppy is balanced by the creamy warmth of milk, creating a fragrance that is both relaxing and nourishing.",
+        "reviews": 972
     },
     {
         "id": 213,
         "name": "Barely Red",
-        "price": 200,
+        "price": "19.00",
         "image": "Pictures/LotionColl/RedLotion.jpg",
-        "description": "Barely Red is a sophisticated, slightly fruity fragrance with a touch of red berries and floral elegance. The lotion blends fresh raspberry and strawberry with soft hints of rose, creating a scent that is both sweet and elegant. It nourishes and hydrates the skin, leaving it feeling smooth and subtly scented with a touch of sweetness."
+        "description": "Barely Red is a sophisticated, slightly fruity fragrance with a touch of red berries and floral elegance. The lotion blends fresh raspberry and strawberry with soft hints of rose, creating a scent that is both sweet and elegant. It nourishes and hydrates the skin, leaving it feeling smooth and subtly scented with a touch of sweetness.",
+        "reviews": 1002
     },
     {
         "id": 214,
         "name": "Ocean Foam",
-        "price": 200,
+        "price": "24.00",
         "image": "Pictures/LotionColl/TealLotion.jpg",
-        "description": "Ocean Foam is a fresh, invigorating fragrance that captures the essence of the sea. With notes of crisp ocean breeze, green leaves, and a touch of sea salt, this lotion provides an energizing scent while deeply moisturizing the skin. It leaves the skin feeling refreshed, soft, and lightly scented with the refreshing air of the ocean."
+        "description": "Ocean Foam is a fresh, invigorating fragrance that captures the essence of the sea. With notes of crisp ocean breeze, green leaves, and a touch of sea salt, this lotion provides an energizing scent while deeply moisturizing the skin. It leaves the skin feeling refreshed, soft, and lightly scented with the refreshing air of the ocean.",
+        "reviews": 2809
     },
     {
         "id": 215,
         "name": "La Passion",
-        "price": 200,
+        "price": "29.00",
         "image": "Pictures/LotionColl/OrangeLotion.jpg",
-        "description": "La Passion is a bold, sensual fragrance that embodies deep desire and fiery passion. With notes of red fruits, spicy cinnamon, and a touch of vanilla, this lotion wraps the skin in a warm, seductive scent. It nourishes the skin, leaving it soft, smooth, and enveloped in the passionate warmth of the fragrance."
+        "description": "La Passion is a bold, sensual fragrance that embodies deep desire and fiery passion. With notes of red fruits, spicy cinnamon, and a touch of vanilla, this lotion wraps the skin in a warm, seductive scent. It nourishes the skin, leaving it soft, smooth, and enveloped in the passionate warmth of the fragrance.",
+        "reviews": 3890
     }
 ]
