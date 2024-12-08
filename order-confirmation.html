@@ -4,22 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Confirmation | SOLEIL</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        /* General Page Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f0f8;
-            color: #5d5d5d;
-            margin: 0;
-            padding: 0;
-            background-image: url('images/soft-scent-background.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-
         /* Container for the order page */
-        .container {
-            width: 90%;
+        .container1 {
+            width: 60%;
             margin: 40px auto;
             max-width: 1000px;
             background-color: #fff;
@@ -34,7 +23,7 @@
             color: #9b6c88;
             text-align: center;
             margin-bottom: 20px;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            /* font-family: 'Comic Sans MS', cursive, sans-serif; */
         }
 
         /* Order Summary Section */
@@ -42,10 +31,11 @@
             margin-bottom: 30px;
         }
 
-        .order-summary h3 {
+        h3 {
             font-size: 24px;
-            color: #9b6c88;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: 'Times New Roman', Times, serif;
+            /* color: #9b6c88; */
+            /* font-family: 'Comic Sans MS', cursive, sans-serif; */
         }
 
         .order-item {
@@ -71,8 +61,8 @@
             font-weight: bold;
             margin-top: 20px;
             text-align: right;
-            color: #9b6c88;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #a76784;
+            /* font-family: 'Comic Sans MS', cursive, sans-serif; */
         }
 
         /* User Details Section */
@@ -80,19 +70,9 @@
             margin-bottom: 30px;
         }
 
-        .user-details h3 {
-            font-size: 24px;
-            color: #9b6c88;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-        }
-
         .user-details p {
             font-size: 18px;
             color: #5d5d5d;
-        }
-
-        .user-details p strong {
-            color: #9b6c88;
         }
 
         /* Button Styling */
@@ -152,15 +132,27 @@
             box-shadow: 0 3px 6px rgba(209, 182, 224, 0.6);
         }
 
+        .hr{
+            opacity: 100%;
+            border-top: 1px dashed #a76784;
+        }
+
         /* Remove outline on button focus */
         button:focus {
             outline: none;
         }
 
-        /* Button Text Effects */
-        .confirmation-buttons button:hover {
-            font-weight: 600; /* Bold the text on hover */
+        @media (max-width:490px){
+            .confirmation-buttons{
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .confirmation-buttons button{
+                width: 90%;
+            }
         }
+
     </style>
 </head>
 <body>
@@ -175,13 +167,16 @@
             .catch(error => console.error('Error loading header:', error));
     </script>
 
-    <div class="container">
-        <div class="title">Order Confirmation</div>
+    <div class="container1">
+        <div class="title">
+            <h1 class="labelText"> Confirmation </h1>
+        </div>
 
         <div class="order-summary">
             <h3>Order Summary</h3>
             <div id="orderItems"></div>
 
+            <hr class="hr">
             <div class="total">
                 Total: $<span id="totalPrice">0</span>
             </div>
@@ -195,8 +190,8 @@
         </div>
 
         <div class="confirmation-buttons">
-            <button class="confirm" onclick="confirmOrder()">Everything Looks Good!</button>
-            <button class="back" onclick="goBackToCheckout()">Go Back to Checkout</button>
+            <button class="confirm" onclick="confirmOrder()">Proceed</button>
+            <button class="back" onclick="goBackToCheckout()">Return</button>
         </div>
     </div>
 

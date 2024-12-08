@@ -1,15 +1,14 @@
 
 /* Global Styles */
-body {
+/* body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f0f8;
     color: #5d5d5d;
     margin: 0;
     padding: 0;
     background-image: url('images/soft-scent-background.jpg');
     background-size: cover;
     background-position: center;
-}
+} */
 
 .container {
     width: 90%;
@@ -21,14 +20,14 @@ body {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-.title {
+/* .title {
     font-size: 28px;
     font-weight: 600;
     color: #9b6c88;
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Comic Sans MS', cursive, sans-serif;
-}
+} */
 
 /* Cart Item Styling */
 .cart-item {
@@ -53,26 +52,29 @@ body {
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #f7c8d1;
+    border: 2px solid #ded9d9;
 }
 
 .item-details {
     display: flex;
-    align-items: center;
+    align-items:center;
     margin-left: 15px;
     flex-grow: 1;
+    gap: 10px;
 }
 
 .name-price {
     margin-left: 15px;
+    margin-inline: 10px;
 }
 
 .name-price h2 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: #9b6c88;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    color: #4b3c43;
+    font-family: "Scala Sans Pro", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    /* font-family: 'Comic Sans MS', cursive, sans-serif; */
 }
 
 .name-price .price {
@@ -88,7 +90,7 @@ body {
 }
 
 .quantity button {
-    background-color: #ffb6c1;
+    background-color: #b8839b;
     color: white;
     border: none;
     padding: 6px 12px;
@@ -100,8 +102,8 @@ body {
 }
 
 .quantity button:hover {
-    background-color: #ff80a1;
-    transform: scale(1.05);
+    background-color: #a76784;
+    /* transform: scale(1.05); */
 }
 
 .quantity span {
@@ -110,41 +112,26 @@ body {
     color: #5d5d5d;
 }
 
-.remove-item {
-    background-color: #f7c8d1;
-    color: white;
-    padding: 6px 12px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.remove-item:hover {
-    background-color: #f08a8a;
-    transform: scale(1.05);
-}
 
 /* Total Section */
-.total {
-    font-size: 22px;
-    font-weight: bold;
+.total h2{
+    font-size: 17px;
+    /* font-weight: bold; */
     margin-top: 30px;
     text-align: right;
-    color: #9b6c88;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color:#5d5d5d;
+    /* font-family: 'Comic Sans MS', cursive, sans-serif; */
 }
 
 /* Buttons for Proceeding */
 .buttons {
-    margin-top: 25px;
+    margin-top: 10px;
     display: flex;
     justify-content: flex-end;
 }
 
 .buttons button {
-    background-color: #ffb6c1;
+    background-color: #b8839b;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -155,8 +142,8 @@ body {
 }
 
 .buttons button:hover {
-    background-color: #ff80a1;
-    transform: scale(1.05);
+    background-color: #a76784;
+    transform: scale(1.03);
 }
 
 /* Empty Cart Styling */

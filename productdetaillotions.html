@@ -19,13 +19,13 @@
     </script>
 
     <div class="container">
-        <div class="title">PRODUCT DETAIL</div>
         <div class="detail">
             <div class="image">
                 <img src="">
             </div>
             <div class="content">
-                <h1 class="name"></h1>
+                <h3 class="labelText">Product Detail</h3>
+                <h2 class="name" style="padding: 0;"></h2>
                 <div class="price"></div>
                 <div class="buttons">
                    
@@ -41,8 +41,8 @@
             </div>
         </div>
 
-        <div class="title">Similar product</div>
-        <div class="listProduct"></div>
+        <h3 class="labelText">Similar products</h3>
+        <div class="listProduct" style="background-color: unset;"></div>
     </div>
 
     <script>
@@ -103,5 +103,19 @@
             alert('Product added to cart!');
         }
     </script>
+    <footer>
+        <div id="footer"></div>
+      </footer>
+      <script>
+        // JavaScript to load footer.html into the page
+        window.onload = function() {
+          fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+        };
+      </script>
 </body>
 </html>

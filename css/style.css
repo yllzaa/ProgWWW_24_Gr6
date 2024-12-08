@@ -233,33 +233,21 @@ hr{
     text-align: center;
 }
 .productsOffered{
-    width: auto;
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;
-    /* IDK ABT THIS BG IMAGE LOL */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 60px; */
     padding: 20px;
-    background-color: var(--beige);
-    /* background-image: url(../Pictures/leavesbg.jpg); */
-
-    background-blend-mode:darken;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    /* margin: 20px 10px; */
-    /* gap: 40px; */
+    
 }
 .flip-card {
     position: relative;
     background-color: transparent;
-    max-width: 320px;
-    width: 320px;
     height: 320px;
     perspective: 1000px;
     font-family: sans-serif;
-    margin-inline: 30px;
-    /* margin: 20px; */
+    /* margin-inline: 30px; */
+    margin: 10px;
   }
   .flip-card-inner {
     position: relative;
@@ -292,6 +280,9 @@ hr{
     border-radius: 1rem;
     background-size: cover;
     gap: 15px;
+    background-position: center;
+    background-position-x: center;
+    background-position-y: center;
   }
   
   .flip-card-back {
@@ -385,7 +376,7 @@ hr{
     align-items: center;
     gap: 5px;
 }
-.shop-card .price .span {
+.price {
     color: var(--softGrey);
     font-weight: var(--fw-900);
 }
@@ -589,6 +580,11 @@ hr{
 @media (max-width:800px){
     .sloganbox{
         /* background-image: url('../Pictures/bgimage.avif'); */
+    }
+
+    .productsOffered{
+        grid-template-columns: repeat(1, 3fr);
+        /* padding-inline: 40px; */
     }
     .products{
         flex-direction: column;

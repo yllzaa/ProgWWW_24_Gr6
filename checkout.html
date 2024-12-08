@@ -4,19 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout | SOLEIL</title>
-    <link rel="stylesheet" href="css/stylecheckout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylecart.css">
     <style>
         /* Global Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f0f8;
-            color: #5d5d5d;
-            margin: 0;
-            padding: 0;
-            background-image: url('images/soft-scent-background.jpg');
-            background-size: cover;
-            background-position: center;
-        }
 
         .container {
             width: 90%;
@@ -31,71 +22,10 @@
         .title {
             font-size: 28px;
             font-weight: 600;
-            color: #9b6c88;
+            /* color: #9b6c88; */
             text-align: center;
             margin-bottom: 20px;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-        }
-
-        /* Cart Item Styling */
-        .cart-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #fff;
-            border-radius: 12px;
-            padding: 15px;
-            margin-bottom: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .cart-item:hover {
-            transform: scale(1.02);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .cart-item img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 0;
-            border: none;
-        }
-
-        .item-details {
-            display: flex;
-            align-items: center;
-            margin-left: 15px;
-            flex-grow: 1;
-        }
-
-        .name-price {
-            margin-left: 15px;
-        }
-
-        .name-price h2 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 5px;
-            color: #9b6c88;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-        }
-
-        .name-price .price {
-            font-size: 16px;
-            font-weight: 500;
-            color: #5d5d5d;
-        }
-
-        /* Total Section */
-        .total {
-            font-size: 22px;
-            font-weight: bold;
-            margin-top: 30px;
-            text-align: right;
-            color: #9b6c88;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            /* font-family: 'Comic Sans MS', cursive, sans-serif; */
         }
 
         /* Checkout Form Styling */
@@ -105,7 +35,7 @@
         }
 
         .checkout-form input {
-            width: 100%;
+            width: 95%;
             padding: 12px;
             margin-bottom: 15px;
             font-size: 16px;
@@ -114,7 +44,7 @@
         }
 
         .checkout-form button {
-            background-color: #ffb6c1;
+            background-color: #b8839b;
             color: white;
             padding: 12px 25px;
             font-size: 18px;
@@ -126,7 +56,7 @@
         }
 
         .checkout-form button:hover {
-            background-color: #ff80a1;
+            background-color: #a76784;
             transform: scale(1.05);
         }
 
@@ -208,11 +138,14 @@
     </script>
 
     <div class="container">
-        <div class="title">Checkout - Review Your Order</div>
+        <div class="title">
+            <h1 class="labelText">Checkout</h2>
+            <h2>Review Your Order</h2>
+        </div>
         <div id="cartItems"></div>
 
         <div class="total">
-            Total: $<span id="totalPrice">0</span>
+            <h2 class="labelText">Total: $<span id="totalPrice">0</span></h2>
         </div>
 
         <!-- Checkout Form -->
@@ -285,7 +218,7 @@
                     <div class="item-details">
                         <div class="name-price">
                             <h2>${item.name}</h2>
-                            <p class="price">$${(item.price * item.quantity).toFixed(2)}</p>
+                            <div class="price">$${(item.price * item.quantity).toFixed(2)}</p>
                         </div>
                     </div>
                 `;

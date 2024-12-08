@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart | SOLEIL</title>
     <link rel="stylesheet" href="css/stylecart.css">
+    <link rel="stylesheet" href="css/style.css">
  
 </head>
 <body>
@@ -20,11 +21,12 @@
     </script>
 
     <div class="container">
-        <div class="title">Your Fragrance Cart</div>
+        <!-- <div class="title">Your Fragrance Cart</div> -->
+         <h1 class="labelText" style="font-size: 17px;">Your Cart</h2>
         <div id="cartItems"></div>
 
         <div class="total">
-            Total: $<span id="totalPrice">0</span>
+            <h2 class="labelText">Total: $<span id="totalPrice">0</span></h2>
         </div>
         <div class="buttons">
             <button id="checkoutButton">Proceed to Checkout</button>
@@ -65,9 +67,10 @@
                             <button class="decrease" data-index="${index}">-</button>
                             <span>${item.quantity}</span>
                             <button class="increase" data-index="${index}">+</button>
+                            <button class="remove-item" data-index="${index}"><i class="fa fa-trash" aria-hidden="true"></i></button>
                         </div>
+                        
                     </div>
-                    <button class="remove-item" data-index="${index}">Remove</button>
                 `;
                 cartItemsContainer.appendChild(cartItem);
             });
