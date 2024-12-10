@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/stylecart.css">
     <style>
         /* Global Styles */
-
         .container {
             width: 90%;
             margin: 40px auto;
@@ -22,10 +21,8 @@
         .title {
             font-size: 28px;
             font-weight: 600;
-            /* color: #9b6c88; */
             text-align: center;
             margin-bottom: 20px;
-            /* font-family: 'Comic Sans MS', cursive, sans-serif; */
         }
 
         /* Checkout Form Styling */
@@ -37,10 +34,21 @@
         .checkout-form input {
             width: 95%;
             padding: 12px;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
             font-size: 16px;
             border: 2px solid #ddd;
             border-radius: 8px;
+        }
+
+        .checkout-form input.error {
+            border-color: red;
+        }
+
+        .checkout-form .error-message {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 15px;
+            display: none;
         }
 
         .checkout-form button {
@@ -60,7 +68,6 @@
             transform: scale(1.05);
         }
 
-        /* Payment Information Box */
         .payment-box {
             background-color: #f5f5f5;
             border: 2px solid #ddd;
@@ -77,33 +84,6 @@
             margin-bottom: 20px;
         }
 
-        .payment-method label {
-            font-size: 16px;
-            font-weight: 600;
-            color: #5d5d5d;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .payment-method input[type="radio"] {
-            cursor: pointer;
-        }
-
-        .payment-details {
-            display: none;
-            margin-top: 15px;
-        }
-
-        .payment-method input[type="radio"] {
-            margin-right: 10px;
-            cursor: pointer;
-        }
-
-        .payment-details input[type="number"] {
-            -moz-appearance: textfield;
-        }
-
         @media (max-width: 768px) {
             .container {
                 width: 100%;
@@ -114,11 +94,6 @@
                 font-size: 24px;
             }
 
-            .cart-item img {
-                width: 80px;
-                height: 80px;
-            }
-
             .checkout-form input, .checkout-form button {
                 padding: 10px;
             }
@@ -127,10 +102,9 @@
 </head>
 <body>
 
-    <div id="header"></div> <!-- Placeholder for the header -->
+    <div id="header"></div>
 
     <script>
-        // Load header.html into the #header div
         fetch('header.html')
             .then(response => response.text())
             .then(data => document.getElementById('header').innerHTML = data)
@@ -151,26 +125,21 @@
         <!-- Checkout Form -->
         <div class="checkout-form">
             <label for="name">Full Name:</label>
-            <input type="text" id="name" placeholder="Enter your full name" required>
+            <input type="text" id="name" placeholder="Enter your full name">
+            <div class="error-message" id="nameError">Full Name is required.</div>
 
             <label for="address">Shipping Address:</label>
-            <input type="text" id="address" placeholder="Enter your shipping address" required>
+            <input type="text" id="address" placeholder="Enter your shipping address">
+            <div class="error-message" id="addressError">Shipping Address is required.</div>
 
-            <!-- Billing Address (Optional) -->
             <label for="billingAddress">Billing Address (Optional):</label>
             <input type="text" id="billingAddress" placeholder="Enter your billing address">
 
             <label for="contact">Contact Number:</label>
-            <input type="text" id="contact" placeholder="Enter your contact number" required>
+            <input type="text" id="contact" placeholder="Enter your contact number">
+            <div class="error-message" id="contactError">Contact Number is required.</div>
 
-            <!-- Coupon Code -->
-            <label for="coupon">Coupon Code (Optional):</label>
-            <input type="text" id="coupon" placeholder="Enter a coupon code">
-
-            <!-- Payment Information Label (Outside the Box) -->
-            <label for="payment" style="font-size: 18px; font-weight: 600; color: #9b6c88; margin-top: 20px;">Payment Information:</label>
-            
-            <!-- Payment Information Box -->
+            <label for="payment">Payment Information:</label>
             <div class="payment-box">
                 <div class="payment-method">
                     <label for="cash">
@@ -182,10 +151,12 @@
                         Credit/Debit Card
                     </label>
                 </div>
+                <div class="error-message" id="paymentError">Payment method is required.</div>
 
                 <div class="payment-details" id="cardDetails">
                     <label for="bankNumber">Bank Account Number:</label>
-                    <input type="number" id="bankNumber" placeholder="Enter your bank account number" min="0">
+                    <input type="number" id="bankNumber" placeholder="Enter your bank account number">
+                    <div class="error-message" id="bankNumberError">Bank Account Number is required for card payment.</div>
                 </div>
             </div>
 
@@ -194,23 +165,20 @@
     </div>
 
     <script>
-        // Function to load and display the cart on checkout page
         function loadCart() {
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
             let cartItemsContainer = document.getElementById('cartItems');
             let totalPrice = 0;
-            cartItemsContainer.innerHTML = ''; // Clear existing items
 
+            cartItemsContainer.innerHTML = ''; 
             if (cart.length === 0) {
                 cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
                 document.getElementById('totalPrice').innerText = '0';
                 return;
             }
 
-            cart.forEach((item, index) => {
+            cart.forEach((item) => {
                 totalPrice += item.price * item.quantity;
-
-                // Create cart item element
                 let cartItem = document.createElement('div');
                 cartItem.classList.add('cart-item');
                 cartItem.innerHTML = `
@@ -218,7 +186,7 @@
                     <div class="item-details">
                         <div class="name-price">
                             <h2>${item.name}</h2>
-                            <div class="price">$${(item.price * item.quantity).toFixed(2)}</p>
+                            <div class="price">$${(item.price * item.quantity).toFixed(2)}</div>
                         </div>
                     </div>
                 `;
@@ -228,44 +196,62 @@
             document.getElementById('totalPrice').innerText = totalPrice.toFixed(2);
         }
 
-        // Toggle payment details for card payment
         function togglePaymentDetails() {
             let paymentMethod = document.querySelector('input[name="paymentMethod"]:checked')?.value;
-            let cardDetails = document.getElementById('cardDetails');
-            if (paymentMethod === 'card') {
-                cardDetails.style.display = 'block';
-            } else {
-                cardDetails.style.display = 'none';
-            }
+            document.getElementById('cardDetails').style.display = paymentMethod === 'card' ? 'block' : 'none';
         }
 
-        // Place order and save data to localStorage
         function placeOrder() {
-            let name = document.getElementById('name').value;
-            let address = document.getElementById('address').value;
-            let billingAddress = document.getElementById('billingAddress').value;
-            let contact = document.getElementById('contact').value;
-            let paymentMethod = document.querySelector('input[name="paymentMethod"]:checked') ? 
-                document.querySelector('input[name="paymentMethod"]:checked').value : 'Not selected';
-            let bankNumber = document.getElementById('bankNumber').value;
+            let isValid = true;
+
+            // Reset error messages
+            document.querySelectorAll('.error-message').forEach(error => error.style.display = 'none');
+            document.querySelectorAll('.checkout-form input').forEach(input => input.classList.remove('error'));
+
+            // Validate fields
+            if (!document.getElementById('name').value.trim()) {
+                document.getElementById('nameError').style.display = 'block';
+                document.getElementById('name').classList.add('error');
+                isValid = false;
+            }
+            if (!document.getElementById('address').value.trim()) {
+                document.getElementById('addressError').style.display = 'block';
+                document.getElementById('address').classList.add('error');
+                isValid = false;
+            }
+            if (!document.getElementById('contact').value.trim()) {
+                document.getElementById('contactError').style.display = 'block';
+                document.getElementById('contact').classList.add('error');
+                isValid = false;
+            }
+            let paymentMethod = document.querySelector('input[name="paymentMethod"]:checked');
+            if (!paymentMethod) {
+                document.getElementById('paymentError').style.display = 'block';
+                isValid = false;
+            } else if (paymentMethod.value === 'card' && !document.getElementById('bankNumber').value.trim()) {
+                document.getElementById('bankNumberError').style.display = 'block';
+                document.getElementById('bankNumber').classList.add('error');
+                isValid = false;
+            }
+
+            if (!isValid) return;
 
             let order = {
-                name: name,
-                address: address,
-                billingAddress: billingAddress,
-                contact: contact,
-                paymentMethod: paymentMethod,
-                bankNumber: bankNumber,
+                name: document.getElementById('name').value.trim(),
+                address: document.getElementById('address').value.trim(),
+                billingAddress: document.getElementById('billingAddress').value.trim(),
+                contact: document.getElementById('contact').value.trim(),
+                paymentMethod: paymentMethod.value,
+                bankNumber: paymentMethod.value === 'card' ? document.getElementById('bankNumber').value.trim() : '',
                 cart: JSON.parse(localStorage.getItem('cart')) || [],
-                total: parseFloat(document.getElementById('totalPrice').innerText),
-                coupon: document.getElementById('coupon').value
+                total: parseFloat(document.getElementById('totalPrice').innerText)
             };
 
             localStorage.setItem('order', JSON.stringify(order));
             window.location.href = 'order-confirmation.html';
         }
 
-        loadCart(); // Load cart when page loads
+        loadCart();
     </script>
 
 </body>

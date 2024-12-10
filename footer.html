@@ -4,200 +4,233 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Footer SOLEIL</title>
+    <title>Footer | SOLEIL</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-   <style>
-      *{
-         box-sizing: border-box;
-         margin:0;
-         padding:0;}
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-         footer{
-         background-color: #000000ff;
-         position: relative;
-         width: 100%;
-         min-height: 350px;
-         padding: 3rem 1rem;
-      }
-      .container-footer {
-         max-width: 1140px;
-         margin: 0 auto;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         flex-direction: column;
-      }
-      .row{
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-      }
+        footer {
+            background-color: #000;
+            position: relative;
+            width: 100%;
+            min-height: 350px;
+            padding: 3rem 1rem;
+        }
 
-      .col{
-         min-width: 250px;
-         color:#f2f2f2f2;
-         font-family: poppins;
-         padding:0 2rem;
-      }
-      .col .logo{
-         width: 100px;
-         margin-bottom:25px;
-      }
-      .col h3{
-         color:var(--softPink);
-         margin-bottom: 20px;
-         position: relative;
-         cursor: pointer;
-      }
-      .col h3::after{
-         content: '';
-         height:3px;
-         width:0px;
-         background-color: var(--softPink);
-         position: absolute;
-         bottom: 0;
-         left:0;
-         transition: 0.3s ease;
+        .container-footer {
+            max-width: 1140px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
 
-      }
-      .col h3:hover::after{
-         width:30px
-      }
-      .col .social a i{
-         color: var(--softPink);
-         margin-top:2rem;
-         margin-right: 5px;
-         transition: 0.3s ease;
-      }
-      .col .social a i:hover{
-         transform: scale(1.5);
-         filter:grayscale(25);
-      }
-      .col .links a{
-         display: block;
-         text-decoration: none;
-         color:#f2f2f2;
-         margin-bottom: 5px;
-         position: relative;
-         transition: 0.3s ease;
-      }
-      .col .links a::before{
-         content:'';
-         height: 16px;
-         width:3px;
-         position: absolute;
-         top:5px;
-         left:-10px;
-         background-color: var(--softPink);
-         transition: 0.5s ease;
-         opacity: 0;
-      }
-      .col .links a:hover::before{
-         opacity: 1;
-      }
-      .col .links a:hover{
-         transform: translateX(-8px);
-         color:var(--softPink);
-      }
-      .col .contact-details{
-         display: inline-flex;
-         justify-content: space-between;
-      }
-      .col .contact-details i{
-         margin-right:15px;
-      }
-      .row .form{
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         padding:2rem 0;
-      }
-      .row .form input{
-         background-color: #1a1c20ff;
-         border:0;
-         outline:none;
-         padding:14px 20px;
-         border-radius: 6px;
-         border-top-right-radius: 0;
-         border-bottom-right-radius: 0;
-      }
-      .form button{
-         padding:14px 20px;
-         border:0;
-         border-radius: 6px;
-         border-top-left-radius: 0;
-         border-bottom-left-radius: 0;
-         background-color: var(--softPink);
-      }
-   </style>
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .col {
+            min-width: 250px;
+            color: #f2f2f2;
+            font-family: poppins;
+            padding: 0 2rem;
+        }
+
+        .col .logo {
+            width: 100px;
+            margin-bottom: 25px;
+        }
+
+        .col h3 {
+            color: var(--softPink);
+            margin-bottom: 20px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .col h3::after {
+            content: '';
+            height: 3px;
+            width: 0px;
+            background-color: var(--softPink);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s ease;
+        }
+
+        .col h3:hover::after {
+            width: 30px;
+        }
+
+        .col .social a i {
+            color: var(--softPink);
+            margin-top: 2rem;
+            margin-right: 5px;
+            transition: 0.3s ease;
+        }
+
+        .col .social a i:hover {
+            transform: scale(1.5);
+            filter: grayscale(25%);
+        }
+
+        .col .links a {
+            display: block;
+            text-decoration: none;
+            color: #f2f2f2;
+            margin-bottom: 5px;
+            position: relative;
+            transition: 0.3s ease;
+        }
+
+        .col .links a::before {
+            content: '';
+            height: 16px;
+            width: 3px;
+            position: absolute;
+            top: 5px;
+            left: -10px;
+            background-color: var(--softPink);
+            transition: 0.5s ease;
+            opacity: 0;
+        }
+
+        .col .links a:hover::before {
+            opacity: 1;
+        }
+
+        .col .links a:hover {
+            transform: translateX(-8px);
+            color: var(--softPink);
+        }
+
+        .col .contact-details {
+            display: inline-flex;
+            justify-content: space-between;
+        }
+
+        .col .contact-details i {
+            margin-right: 15px;
+        }
+
+         .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+         .form input {
+            background-color: #1a1c20;
+            border: 0;
+            outline: none;
+            padding: 14px 20px;
+            border-radius: 6px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            color: #f2f2f2;
+        }
+
+        .form button {
+            padding: 14px 20px;
+            border: 0;
+            border-radius: 6px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            background-color: var(--softPink);
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
-     <footer>
+    <footer>
         <div class="container-footer">
             <div class="row">
-                  <div class="col" id="company">
-                      <img src="Pictures/SoleilWhite.png" alt="" class="logo">
-                      <p>
+                <div class="col" id="company">
+                    <img src="Pictures/SoleilWhite.png" alt="SOLEIL Logo" class="logo">
+                    <p>
                         We are specialized in fragrances, get your signature scent.
                         Try our premium services.
-                      </p>
-                      <div class="social">
-                        <a href="https://fb.watch/wgc0conzrL/" target=”_blank”><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/p/CSeYforAqm4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target=”_blank”><i class="fa fa-instagram"></i></a>
-                        <a href="https://youtu.be/dQw4w9WgXcQ?si=isOjPogSxL0RYTTG" target=”_blank”><i class="fa fa-youtube"></i></a>
-                        <a href="https://x.com/rickroll_meme_/status/1855234204801634728" target=”_blank”><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/posts/arpitbuchha_aigenerations-activity-7163449792721739776-ygix?utm_source=share&utm_medium=member_desktop" target=”_blank”><i class="fa fa-linkedin"></i></a>
-                      </div>
-                  </div>
+                    </p>
+                    <div class="social">
+                        <a href="https://fb.watch/wgc0conzrL/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+                        <a href="https://x.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
 
-
-                  <div class="col" id="services">
-                     <h3>Services</h3>
-                     <div class="links">
+                <div class="col" id="services">
+                    <h3>Services</h3>
+                    <div class="links">
                         <a href="shopperfume.html">Perfumes</a>
                         <a href="shoplotions.html">Lotions</a>
                         <a href="shopcandles.html">Candles</a>
-                     </div>
-                  </div>
+                    </div>
+                </div>
 
-                  <div class="col" id="useful-links">
-                     <h3>Links</h3>
-                     <div class="links">
+                <div class="col" id="useful-links">
+                    <h3>Links</h3>
+                    <div class="links">
                         <a href="aboutus.html">About</a>
                         <a href="#">Services</a>
                         <a href="#">Our Policy</a>
                         <a href="#">Help</a>
-                     </div>
-                  </div>
+                    </div>
+                </div>
 
-                  <div class="col" id="contact">
-                      <h3>Contact</h3>
-                      <div class="contact-details">
+                <div class="col" id="contact">
+                    <h3>Contact</h3>
+                    <div class="contact-details">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                         <!-- <p></p> -->
-                         <address>FF-42, Procube Avenue, <br> NY, USA</address>
-                      </div>
-                      <div class="contact-details">
-                         <i class="fa fa-phone"></i>
-                         <p>+383 45 585 334</p>
-                      </div>
-                  </div>
+                        <address>FF-42, Procube Avenue,<br> NY, USA</address>
+                    </div>
+                    <div class="contact-details">
+                        <i class="fa fa-phone"></i>
+                        <p>+383 45 585 334</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="row">
-                  <div class="form">
-                    <form action="">
-                        <input type="text" placeholder="Email here...">
-                        <button><i class="fa fa-paper-plane"></i></button>
-                    </form>
-                  </div>
-            </div>
+            <div class="form">
+               <form>
+                   <input type="email" placeholder="Email here..." required>
+                   <a href="mailto:kryeziuyllza00@gmail.com?bcc=yllza.kryeziu@student.uni-pr.edu&subject=Can%20you%20help%20?&body=I%20am%20looking%20for%20a%20dedicated%20resource%20to%20help%20me%20during%20the%20Holidays">
+                       <button type="button"><i class="fa fa-paper-plane"></i></button>
+                   </a>
+               </form>
+           </div>
+           
 
         </div>
-     </footer>
+    
+
+      <script>
+        function sendEmail(event) {
+            event.preventDefault(); // Prevent the form from reloading the page
+
+            const emailInput = document.getElementById("emailInput").value;
+            const subject = "Subscription to SOLEIL";
+            const body = `Hello,\n\nI would like to subscribe to SOLEIL's updates and offers.\n\nMy email: ${emailInput}\n\nBest regards,\n`;
+
+            // Open the user's email client with the pre-filled message
+            window.location.href = `mailto:soleil@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        }
+      </script>
+    </footer>
 </body>
 </html>

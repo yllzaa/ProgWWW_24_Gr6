@@ -42,6 +42,8 @@
 
         <h3 class="labelText">Similar products</h3>
         <div class="listProduct" style="background-color: unset;"></div>
+
+        <div id="cartMessage" class="cart-message"></div>
     </div>
 
     <script>
@@ -99,7 +101,20 @@
             }
             // Save updated cart to localStorage
             localStorage.setItem('cart', JSON.stringify(cart));
-            alert('Product added to cart!');
+             // Show message at the bottom of the window
+             showCartMessage('Product added to cart!');
+
+             
+        }
+        function showCartMessage(message) {
+            let messageContainer = document.getElementById('cartMessage');
+            messageContainer.innerText = message;
+            messageContainer.classList.add('show'); // Add a class to animate the message in
+
+            // Hide the message after 3 seconds
+            setTimeout(() => {
+                messageContainer.classList.remove('show');
+            }, 3000);
         }
     </script>
 
