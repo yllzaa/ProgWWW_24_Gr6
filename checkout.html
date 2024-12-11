@@ -84,6 +84,11 @@
             margin-bottom: 20px;
         }
 
+        .payment-details {
+            display: none;
+            margin-top: 10px;
+        }
+
         @media (max-width: 768px) {
             .container {
                 width: 100%;
@@ -198,7 +203,8 @@
 
         function togglePaymentDetails() {
             let paymentMethod = document.querySelector('input[name="paymentMethod"]:checked')?.value;
-            document.getElementById('cardDetails').style.display = paymentMethod === 'card' ? 'block' : 'none';
+            let cardDetails = document.getElementById('cardDetails');
+            cardDetails.style.display = paymentMethod === 'card' ? 'block' : 'none';
         }
 
         function placeOrder() {
