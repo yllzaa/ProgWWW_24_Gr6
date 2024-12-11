@@ -666,6 +666,11 @@ hr{
     
 
 }
+@media(max-width: 670px) {
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 
 @media (max-width:500px){
@@ -688,17 +693,6 @@ hr{
 
     .listProduct{
         grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media only screen and (max-width: 992px) {
-    .listProduct {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .listProduct {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
