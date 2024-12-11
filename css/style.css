@@ -658,6 +658,10 @@ hr{
         padding-inline: 5px;
     }
 
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     
 
 }
@@ -667,9 +671,7 @@ hr{
     .collection{
         grid-template-columns: repeat(1,3fr);
     }
-}
 
-@media (max-width:500px){
     .products{
         padding: 0;
     }
@@ -681,6 +683,10 @@ hr{
 
     .productsOffered{
         padding: 5px;
+    }
+
+    .listProduct{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
