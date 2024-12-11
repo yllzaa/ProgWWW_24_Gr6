@@ -589,6 +589,7 @@ hr{
     .sloganbox{
         /* background-image: url('../Pictures/bgimage.avif'); */
     }
+    
 
     .flex-list{
         flex-direction: column;
@@ -689,6 +690,18 @@ hr{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+@media only screen and (max-width: 992px) {
+    .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 
 
 
