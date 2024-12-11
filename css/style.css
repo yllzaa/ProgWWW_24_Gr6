@@ -108,7 +108,9 @@ hr{
 }
 .section-title{
     font-size: 2em;
+    text-align: center;
 }
+
 .backToTop{
     margin: 30px;
     display: flex;
@@ -412,28 +414,31 @@ hr{
  /* COLLECTIONS PREVIEW */
 
 .collection{ 
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     justify-content: center;
     margin-top: 15px;
-}
-.collection-list {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 0%;
-    /* gap: 10px; */
+    padding: 20px;
 }
+
 .collection-card {
+    position: relative;
     /* background-color: var(--light-gray); */
     background-repeat: no-repeat;
     background-size:cover;
-    min-height: 400px;
-    min-width: 330px;
+    height: 400px;
+
     padding: 20px;
     display: flex;
     flex-direction: column;
-    margin-inline: 20px;
+    margin-inline: 10px;
     transition: var(--transition-2);
+    max-width: 100%;
+    background-position: center;
+        
 }
 
 .collection-card:hover{
@@ -475,10 +480,8 @@ hr{
 }
 .testing-coll img{
     /* max-height: 500px; */
-    /* min-width: 400px; */
-    max-height: 500px;
-    max-width: 500px;
-    min-width: 300px;
+    max-width: 50%;
+    /* min-width: 100px; */
     object-fit:cover;
 }
 .testing-coll .textBox{
@@ -514,6 +517,9 @@ hr{
     padding-inline: 20px;
     max-width: 360px;
 }
+.feature-card h2{
+    text-align: center;
+}
 
 
 /* SHOPS STYLE */
@@ -535,6 +541,10 @@ hr{
     box-shadow: 0 8px 14px 0 rgba(0,0,0,0.1);
     overflow: hidden;
 
+}
+
+.listProduct .item:hover{
+    scale: 1.02;
 }
 .listProduct .item img{
     width: 100%;
@@ -580,6 +590,20 @@ hr{
         /* background-image: url('../Pictures/bgimage.avif'); */
     }
 
+    .flex-list{
+        flex-direction: column;
+
+    }
+    .testing-coll{
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .testing-coll img{
+        max-width: 90%;
+        width: auto;
+    }
+
     .productsOffered{
         grid-template-columns: repeat(1, 3fr);
         /* padding-inline: 40px; */
@@ -622,10 +646,6 @@ hr{
     .hero-text { max-width: 30ch;}
     
 
-    .collection-list{
-        display: flex;
-        flex-direction: column;
-    }
 
     .collection-card{
         margin-inline: 5px;
@@ -640,6 +660,28 @@ hr{
 
     
 
+}
+
+
+@media (max-width:500px){
+    .collection{
+        grid-template-columns: repeat(1,3fr);
+    }
+}
+
+@media (max-width:500px){
+    .products{
+        padding: 0;
+    }
+
+    .products-coll{
+        margin: 20px 0px;
+        padding: 0px;
+    }
+
+    .productsOffered{
+        padding: 5px;
+    }
 }
 
 
