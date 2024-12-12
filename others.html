@@ -583,6 +583,54 @@
 </script>
 </div>
 
+<h1>Gjej Pozitën Tënde Gjeografike</h1>
+<button id="getLocation">Gjej Vendndodhjen</button>
+<p id="output"></p>
+
+<script>
+    // Referencë për elementin e butonit dhe ku do shfaqet rezultati
+    const button = document.getElementById('getLocation');
+    const output = document.getElementById('output');
+
+    // Funksion për të marrë vendndodhjen
+    button.addEventListener('click', function() {
+        // Kontrolloni nëse Geolocation është e mbështetur nga shfletuesi
+        if (navigator.geolocation) {
+            // Kërkoni vendndodhjen
+            navigator.geolocation.getCurrentPosition(
+                function(position) {
+                    // Nëse e merr me sukses
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+
+                    output.innerHTML = `Gjerësia gjeografike: ${latitude} <br> 
+                                        Gjatësia gjeografike: ${longitude}`;
+                },
+                function(error) {
+                    // Nëse ka ndodhur një gabim
+                    switch (error.code) {
+                        case error.PERMISSION_DENIED:
+                            output.textContent = "Leja për vendndodhje u refuzua.";
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            output.textContent = "Informacioni për vendndodhjen nuk është i disponueshëm.";
+                            break;
+                        case error.TIMEOUT:
+                            output.textContent = "Kërkesa për vendndodhje skadoi.";
+                            break;
+                        default:
+                            output.textContent = "Një gabim i panjohur ndodhi.";
+                            break;
+                    }
+                }
+            );
+        } else {
+            // Nëse shfletuesi nuk e mbështet Geolocation API
+            output.textContent = "Shfletuesi juaj nuk mbështet Geolocation.";
+        }
+    });
+</script>
+
 
 
 

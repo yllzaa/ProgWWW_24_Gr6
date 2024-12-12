@@ -685,9 +685,22 @@
                   <h3 class="labelText">Exclusive Workshop</h3>
                   <h2>The Art Of Fragrance Zoning</h2>
                   <p class="desc-text">Did you know that scents can have a positive effect on your mood? Test out scents and discover where to place them in your home in our free, expert-led workshop. Come by and enjoy an exclusive gift when you spend €70.</p>
+                  <p id="workshop-date" class="date-text"></p>
                 </div>
               </div>
             </section>
+            <script>
+              // Get the current date
+const today = new Date();
+
+// Format the date (e.g., "Saturday, December 16, 2024")
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+const formattedDate = today.toLocaleDateString('en-US', options);
+
+// Add the date to the HTML
+document.getElementById('workshop-date').textContent = `Date: ${formattedDate}`;
+
+            </script>
 
 
 
