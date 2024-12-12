@@ -11,12 +11,24 @@
     <div id="header"></div> <!-- Placeholder for the header -->
 
     <script>
-    // Load header.html into the #header div
-    fetch('header.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('header').innerHTML = data)
-        .catch(error => console.error('Error loading header:', error));
-    </script>
+      // Load header.html into the #header div
+        fetch('header1.html')
+          .then(response => response.text())
+          .then(data => {
+          document.getElementById('header').innerHTML = data;
+          document.getElementById('burgr').addEventListener('click', 
+          function() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        )})
+          .catch(error => console.error('Error loading header:', error));
+
+      </script>
     
     <div class="container">
         <div class="sloganbox" style="background-image: url(Pictures/bgimage4.jpg); background-position-y:center ;">
