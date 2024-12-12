@@ -690,15 +690,15 @@
               </div>
             </section>
             <script>
-              // Get the current date
-const today = new Date();
+             
+              const today = new Date();
 
-// Format the date (e.g., "Saturday, December 16, 2024")
-const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-const formattedDate = today.toLocaleDateString('en-US', options);
 
-// Add the date to the HTML
-document.getElementById('workshop-date').textContent = `Date: ${formattedDate}`;
+              const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+              const formattedDate = today.toLocaleDateString('en-US', options);
+
+              
+              document.getElementById('workshop-date').textContent = `Date: ${formattedDate}`;
 
             </script>
 
@@ -777,7 +777,7 @@ document.getElementById('workshop-date').textContent = `Date: ${formattedDate}`;
               <div id="footer"></div>
             </footer>
             <script>
-              // JavaScript to load footer.html into the page
+
               window.onload = function() {
                 fetch('footer.html')
                   .then(response => response.text())
