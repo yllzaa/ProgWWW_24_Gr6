@@ -690,11 +690,15 @@ hr{
     .productsOffered{
         padding: 5px;
     }
+}
 
+@media (max-width:350px){
     .listProduct{
         grid-template-columns: repeat(1, 1fr);
-    }
+    } 
+
 }
+
 
 
 

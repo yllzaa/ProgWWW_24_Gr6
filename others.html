@@ -7,11 +7,11 @@
     <!-- <link rel="stylesheet" href="css/style.css"> -->
 
     <style>
-
-        body{
-
+        @font-face {
+        font-family: myFirstFont;
+        src: url(font/winter_half/Winter\ Half.otf);
         }
-    <style>
+
         table {
             border-collapse: collapse;
             width: 80%;
@@ -33,9 +33,78 @@
         tr:hover {
             background-color: #eaeaea;
         }
+
+        ul{
+            outline: #d67099 dotted;
+            padding: 30px;
+        }
+
+        #bgim{
+            background-image: url(Pictures/candlecoll.jpg),url(Pictures/SoleilBlack.png), url(Pictures/aboutusbg.jpg);
+            background-position: left top, right top, left top;
+            background-repeat: no-repeat, no-repeat, repeat;
+            padding: 15px;
+            height: 400px;
+        }
+
+        #grad1 {
+            height: 55px;
+            background-color: red; 
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, pink);
+            background-size: 300% 100%;
+            background-position: top left;
+            border: 3px solid white;
+            text-shadow: 2px 2px #FF0000;
+        }
+        #grad1:hover, #grad2:hover{
+            animation: mymove 7s infinite normal;
+        }
+
+        #grad2 {
+            height: 55px;
+            background-color: red; 
+            background-image: linear-gradient(30deg, red,violet, orange, yellow, orange,violet, red);
+            background-size: 300% 100%;
+            background-position: top left;
+            border: 3px solid white;
+            text-shadow: 2px 2px #FF0000;
+        }
+
+
+        @keyframes mymove {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+                }
+            }
+
+
+        #fontdiv{
+            font-family: myFirstFont;
+            font-size: 60px;
+            color: green;
+            text-shadow: 0 0 3px red;
+            display: flex;
+            justify-content: center;
+            justify-self: center;
+            width: fit-content;
+            transition: 3s;
+            background-color: beige;
+        }
+
+        #fontdiv:hover{
+            rotate: 360deg;
+            scale: 1.2;
+            transform: skew(20deg);
+            
+        }
     </style>
-        
-    </style>
+      
     
 </head>
 <body>
@@ -50,6 +119,8 @@
             <a href="Videos/armani-perfume-ad.mp4" target="_blank" id="linkid">This is a link, that opens a file. It also has an ID</a> <br>
             
           
+            <h2>Listat pa renditura</h2>
+            <div style="display: flex; flex-direction: row;">
             <ul style="list-style-type:disc;"> Unordered List
                 <li>Coffee</li>
                 <li>Tea</li>
@@ -67,7 +138,9 @@
                 <li>Tea</li> 
                 <li>Milk</li>
             </ul>
+        </div>
 
+            <h2>Lista e renditur</h2>
             <ol>Ordered List
                 <li>Artikulli i parë
                   <ol>
@@ -155,29 +228,72 @@
         Sorry, your browser does not support canvas.
         </canvas>
         
+        
+
+    <div style="display:none;">
+        <img id="scream" width="220" height="277" src="Pictures/bgimage2.jpg">
+        </div>
+
+        <canvas id="myCanvas1" width="300" height="150" style="border:1px solid grey;">
+        </canvas>
+
         <script>
-        const canvas = document.getElementById("myCanvas");
-        const ctx = canvas.getContext("2d");
-        
-        ctx.fillStyle = "pink";
-        ctx.fillRect(0,0, 300,200);
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            
+            const grad=ctx.createLinearGradient(0,0,280,0);
+            grad.addColorStop(0, "lightblue");
+            grad.addColorStop(0.5, "purple");
+            grad.addColorStop(1, "darkblue"); 
+    
+            // Fill rectangle with gradient
+            ctx.fillStyle = grad;
+            ctx.fillRect(0,0,300,150);
+    
+            ctx.moveTo(0,0);
+            ctx.lineTo(100,50);
+            ctx.lineTo(40,50);
+    
+            ctx.stroke();
+    
+            ctx.fillStyle="black";
+            ctx.fillText("Soleil", 10, 70);
+            ctx.fillText("Fragrance", 10, 80);
 
-        ctx.moveTo(0,0);
-        ctx.lineTo(100,50);
-        ctx.lineTo(40,50);
+            const canvas1 = document.getElementById("myCanvas1");
+            const ctx1 = canvas1.getContext("2d");
+            const image = document.getElementById("scream");
 
-        ctx.stroke();
+            image.addEventListener("load", (e) => {
+            ctx1.drawImage(image, 0, 0, 300,150);
+            });
+    
+          </script> 
 
-        ctx.fillStyle="black";
-        ctx.fillText("Soleil", 10, 70);
-        ctx.fillText("Fragrance", 10, 80);
-        
-        
-        </script> 
+
         <h2>Password</h2>
         <div>
             <label for="userPassword">Password:</label>
             <input id="userPassword" type="password" />
+        </div>
+
+        <h2>Multiple bg images</h2>
+        <div id="bgim">
+
+            uhhhhh
+        </div>
+
+        <h2>Gradients</h2>
+        <div id="grad1" style="text-align:center;margin:auto;color:white;mix-blend-mode: difference;font-size:40px;font-weight:bold">
+            Linear Gradient
+         </div>
+         <div id="grad2" style="text-align:center;margin:auto;color:white;mix-blend-mode: difference;font-size:40px;font-weight:bold">
+            Raidal Gradient
+        </div>
+
+        <h2>New font</h2>
+        <div id="fontdiv">
+            Merry Christmas
         </div>
 </body>
 </html
