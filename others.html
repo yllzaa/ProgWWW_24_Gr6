@@ -11,6 +11,29 @@
         body{
 
         }
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #d67099;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #eaeaea;
+        }
+    </style>
         
     </style>
     
@@ -44,10 +67,117 @@
                 <li>Tea</li> 
                 <li>Milk</li>
             </ul>
+
+            <ol>Ordered List
+                <li>Artikulli i parë
+                  <ol>
+                    <li>Nënartikulli 1</li>
+                    <li>Nënartikulli 2</li>
+                  </ol>
+                </li>
+                <li>Artikulli i dytë</li>
+              </ol>
+              
         </div>
 
-
-
+        <h2>Listat definuese</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Një gjuhë e përdorur për krijimin e strukturës së faqeve të internetit.</dd>
+          
+            <dt>CSS</dt>
+            <dd>Një gjuhë që përdoret për të përcaktuar stilin e faqeve të internetit.</dd>
+          
+            <dt>JavaScript</dt>
+            <dd>Një gjuhë programuese që përdoret për të shtuar ndërveprim në faqet e internetit.</dd>
+          </dl>
+          
     </div>  
+
+    <div>
+        <h2 style="text-align: left;">Tabela e Studentëve</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Emri</th>
+            <th>Mbiemri</th>
+            <th>Nota</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Arben</td>
+            <td>Krasniqi</td>
+            <td>9.5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Linda</td>
+            <td>Berisha</td>
+            <td>8.7</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Fatmir</td>
+            <td>Rexha</td>
+            <td>7.8</td>
+        </tr>
+    </tbody>
+</table>
+    
+
+    <div>
+        <h2 style="text-align: left;">Tabela me Cellspacing dhe Cellpadding</h2>
+
+        <table border="1" cellspacing="10" cellpadding="15" style="margin: 0 auto;">
+         <tr>
+             <th>#</th>
+             <th>Emri</th>
+             <th>Mbiemri</th>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Arben</td>
+            <td>Krasniqi</td>
+         </tr>
+         <tr>
+            <td>2</td>
+             <td>Linda</td>
+            <td>Berisha</td>
+         </tr>
+        </table>
+    </DIV>
+    <h2>Canvas</h2>
+    <canvas id="myCanvas" width="300" height="150" style="border:1px solid black">
+        Sorry, your browser does not support canvas.
+        </canvas>
+        
+        <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        
+        ctx.fillStyle = "pink";
+        ctx.fillRect(0,0, 300,200);
+
+        ctx.moveTo(0,0);
+        ctx.lineTo(100,50);
+        ctx.lineTo(40,50);
+
+        ctx.stroke();
+
+        ctx.fillStyle="black";
+        ctx.fillText("Soleil", 10, 70);
+        ctx.fillText("Fragrance", 10, 80);
+        
+        
+        </script> 
+        <h2>Password</h2>
+        <div>
+            <label for="userPassword">Password:</label>
+            <input id="userPassword" type="password" />
+        </div>
 </body>
-</html>
+</html
