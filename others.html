@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stuff We Missed</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     <style>
         @font-face {
@@ -180,6 +182,10 @@
         .button1:hover {
             background-color: #ddd;
         }
+        
+    ul { list-style: none; padding: 0; }
+    li { margin: 5px 0; }
+    .remove-btn { margin-left: 10px; color: red; cursor: pointer; }
     </style>
     </style>
       
@@ -504,8 +510,79 @@
         // Initialize the first image
         updateImage();
         </script>
+<div>
+<button id="hide">Fshih</button>
+<button id="show">Shfaq</button>
+<div id="box" style="width: 100px; height: 100px; background: blue;"></div>
+
+<script>
+    $(document).ready(function() {
+        $('#hide').click(function() {
+            $('#box').hide(); // Fsheh elementin
+        });
+        $('#show').click(function() {
+            $('#box').show(); // Shfaq elementin
+        });
+    });
+</script>
+<div>
+<button id="fadeOut">Zbehu</button>
+<button id="fadeIn">Shfaq</button>
+</div>
+<div>
+<script>
+    $(document).ready(function() {
+        $('#fadeOut').click(function() {
+            $('#box').fadeOut(1000); // Zbeh në 1 sekondë
+        });
+        $('#fadeIn').click(function() {
+            $('#box').fadeIn(1000); // Shfaq me zbehje në 1 sekondë
+        });
+    });
+</script>
+<button id="fadeTo50">Zbehu në 50%</button>
+</div>
+<div>
+<script>
+    $(document).ready(function() {
+        $('#fadeTo50').click(function() {
+            $('#box').fadeTo(1000, 0.5); // Zbeh në 50% opacitet
+        });
+    });
+</script>
+<button id="slideUp">Ngjit Lart</button>
+<button id="slideDown">Zbrit Poshtë</button>
+</div>
+<div>
+<script>
+    $(document).ready(function() {
+        $('#slideUp').click(function() {
+            $('#box').slideUp(500); // Ngjit lart për 0.5 sekonda
+        });
+        $('#slideDown').click(function() {
+            $('#box').slideDown(500); // Zbrit poshtë për 0.5 sekonda
+        });
+    });
+</script>
+<button id="animate">Animo</button></div>
+</div>
+<div>
+<script>
+    $(document).ready(function() {
+        $('#animate').click(function() {
+            $('#box').animate({
+                left: '250px', // Lëviz elementin
+                height: '150px', // Rrit lartësinë
+                width: '150px', // Rrit gjerësinë
+                opacity: 0.5 // Ul opacitetin
+            }, 1000); // Animacioni zgjat 1 sekondë
+        });
+    });
+</script>
+</div>
 
 
->>>>>>> aba42dc11a841ce3bc7a5f9e4592646db1b3928e
+
+
 </body>
 </html
