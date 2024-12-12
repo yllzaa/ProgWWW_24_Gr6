@@ -94,7 +94,7 @@
             justify-content: center;
             justify-self: center;
             width: fit-content;
-            transition: 3s;
+            transition: 1s;
             background-color: beige;
         }
 
@@ -103,6 +103,82 @@
             scale: 1.2;
             transform: skew(20deg);
             
+        }
+
+        #resize{
+            border: 2px solid;
+            padding: 20px; 
+            width: 300px;
+            resize: both;
+            overflow: auto;
+            outline: 1px solid red;
+            outline-offset: 15px;
+        }
+
+        #container {
+            width: 400px;
+            height: 50px;
+            border: 2px dashed #ccc;
+            position: relative;
+        }
+
+        .draggable {
+            width: 50px;
+            height: 50px;
+            background-color: palevioletred;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            cursor: grab;
+            border-radius: 5px;
+        }
+
+        .warning-button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .warning-button:hover {
+         background-color: #e64a19;
+        }
+
+        .imageContainer {
+            width: 300px;
+            height: 300px;
+            margin-top: 5px;
+            border: 2px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9f9f9;
+            overflow: hidden;
+        }
+
+        .imageContainer img {
+            max-width: 100%;
+            max-height: 100%;
+            /* display: none; */
+        }
+
+        .button1 {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button1:hover {
+            background-color: #ddd;
         }
     </style>
     </style>
@@ -114,6 +190,7 @@
         <div class="textBox" style="text-align: center;">
             <h1 class="labelText">Extra Stuff</h1>
             <p>In this page we will use everything from the checkbox list that we need...</p>
+            <a href="index.html">Go Back</a>
         </div>
 
 
@@ -298,6 +375,7 @@
             Merry Christmas
         </div>
 
+<<<<<<< HEAD
         <p>Ne vijim jane paraqitur audio dhe video elementet HTML 5</p>
         <br/>
         <video src="Videos/jadore-dior-ad.mp4" loop autoplay controls width="320" height="260">
@@ -312,5 +390,122 @@
         <audio controls autoplay>
          <source src="Videos/nature-216798.mp3" type="audio/mp3">
         </audio>
+=======
+        <h2>Resizable Box</h2>
+        <div id="resize">
+            <p>This morning I woke up today in this morning in the morning I woke up this morning I woke up and remember that every morning that I wake up.</p>
+          </div>
+
+
+        <h2>Drag and drop</h2>
+        <div id="container">
+            <div id="dragItem" class="draggable" draggable="true">Drag me</div>
+        </div>
+
+        <script>
+            const dragItem = document.getElementById("dragItem");
+            const container = document.getElementById("container");
+        
+            let offsetX = 0, offsetY = 0;
+        
+            dragItem.addEventListener("dragstart", (e) => {
+              offsetX = e.offsetX;
+              offsetY = e.offsetY;
+            });
+        
+            container.addEventListener("dragover", (e) => {
+              e.preventDefault(); // Allow dropping
+            });
+        
+            container.addEventListener("drop", (e) => {
+              e.preventDefault();
+              const x = e.clientX - container.offsetLeft - offsetX;
+              const y = e.clientY - container.offsetTop - offsetY;
+        
+              // Constrain within container
+              const maxX = container.clientWidth - dragItem.offsetWidth;
+              const maxY = container.clientHeight - dragItem.offsetHeight;
+              dragItem.style.left = Math.max(0, Math.min(x, maxX)) + "px";
+              dragItem.style.top = Math.max(0, Math.min(y, maxY)) + "px";
+            });
+        </script>
+
+        <h2>Warning Button Example</h2>
+        <button class="warning-button" id="warningButton">Warning</button>
+
+        <script>
+        const warningButton = document.getElementById("warningButton");
+
+        warningButton.addEventListener("click", () => {
+            alert("Mama a DIVA behind u");
+        });
+        </script>
+
+        <h2>Choose Your Favorite Image</h2>
+        <div>
+            <button id="button1" onclick="changeImage('green')">California girls</button>
+            <button id="button1" onclick="changeImage('pink')">Pillow Princess</button>
+            <button id="button1" onclick="changeImage('aqua')">Barely Red</button>
+          </div>
+        
+          <div class="imageContainer"id="imageContainer1">
+            <img id="green" src="Pictures/CandleColl/LimeCandle.jpg" alt="Cat">
+            <img id="pink" src="Pictures/CandleColl/DarkPinkCandle.jpg" alt="Dog">
+            <img id="aqua" src="Pictures/CandleColl/RedCandle.jpg" alt="Bird">
+          </div>
+          <script>
+            function changeImage(candle) {
+              // Hide all images
+              const images = document.querySelectorAll('#imageContainer1 img');
+              images.forEach(img => img.style.display = 'none');
+        
+              // Show the selected image
+              const selectedImage = document.getElementById(candle);
+              if (selectedImage) {
+                selectedImage.style.display = 'block';
+              }
+            }
+          </script>
+
+        <h2>Image Carousel</h2>
+        <div class="imageContainer" id="imageContainer">
+        <img id="currentImage" src="" alt="Carousel">
+        </div>
+        <div style="width: 300px; display: flex; flex-direction: row; justify-content: space-between;">
+        <button onclick="showPreviousImage()">back</button>
+        <button onclick="showNextImage()">next</button>
+        </div>
+
+        <script>
+        const images = [
+            "Pictures/CandleColl/RedCandle.jpg",
+            "Pictures/CandleColl/OrangeCandle.jpg",
+            "Pictures/CandleColl/LimeCandle.jpg",
+            "Pictures/CandleColl/DarkPinkCandle.jpg"
+        ];
+
+        let currentIndex = 0;
+
+        function updateImage() {
+            const imageElement = document.getElementById("currentImage");
+            imageElement.src = images[currentIndex];
+        }
+
+        function showPreviousImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length; // Wrap around to last image
+            updateImage();
+        }
+
+        function showNextImage() {
+            currentIndex = (currentIndex + 1) % images.length; // Wrap around to first image
+            updateImage();
+        }
+
+        // Initialize the first image
+        updateImage();
+        </script>
+
+
+>>>>>>> aba42dc11a841ce3bc7a5f9e4592646db1b3928e
 </body>
 </html
